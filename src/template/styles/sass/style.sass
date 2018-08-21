@@ -3,13 +3,16 @@
 @import fonts.sass
 @import grid.sass
 @import '../../libs/fancybox/dist/jquery.fancybox.css'
+@import '../../libs/slick-carousel/slick/slick.css'
 @import '../../libs/mdi/css/materialdesignicons.css'
+@import '../../libs/nanoScrollerJs/nanoScrollerJs.css'
 
 
 /* Global settings */
-$font-size: 16px
-$font-family-1: 'Tahoma', sans-serif
-$color-1: #000
+$font-size: 18px
+$font-family-1: 'Roboto Slab', serif
+$font-family-2: 'Roboto', sans-serif
+$color-1: #131313
 
 
 *, :before, :after
@@ -41,6 +44,9 @@ a
 	border-bottom: 1px solid transparent
 	transition: .3s
 
+u
+	text-decoration: none
+
 img
 	display: block
 	max-width: 100% !important
@@ -60,9 +66,23 @@ input, textarea, button
 	&__wrap
 		display: block
 		font-size: $font-size
-		font-family: $font-family-1
+		font-family: $font-family-2
 		background: white
 		width: 100%
+		border: 1px solid #bfbfbf
+		height: 50px
+		padding-left: 15px
+		padding-right: 15px
+	&__text
+		font-size: 16px
+		font-family: $font-family-2
+		position: absolute
+		background-color: #fff
+		top: -10px
+		left: 12px
+		padding-left: 3px
+		padding-right: 5px
+		
 
 
 .textarea
@@ -70,19 +90,44 @@ input, textarea, button
 	&__wrap
 		display: block
 		font-size: $font-size
-		font-family: $font-family-1
+		font-family: $font-family-2
 		background: white
 		width: 100%
+		border: 1px solid #bfbfbf
+		height: 50px
+		height: 134px
 		resize: none
+		padding: 14px 15px
+	&__text
+		font-size: 16px
+		font-family: $font-family-2
+		position: absolute
+		background-color: #fff
+		top: -10px
+		left: 12px
+		padding-left: 3px
+		padding-right: 5px
 
 .btn
 	position: relative
-	display: inline-block
-	font-size: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: $font-size
 	font-family: $font-family-1
 	cursor: pointer
 	text-align: center
 	transition: .3s
+	&_brown
+		background-color: #531010
+		color: #fff
+	&_img-bg
+		height: 50px
+		padding-left: 32px
+		padding-right: 32px
+		background: url('../../img/monogram-small-left.png') no-repeat left center, url('../../img/monogram-small-right.png') no-repeat right center
+		border: 1px solid #bfbfbf
+
 
 .input input, .textarea textarea
 	transition: .3s
@@ -108,9 +153,1032 @@ input, .btn, .slick-slide, textarea
 
 .main-wrap
 	// overflow-x: hidden
+	background: url('../../img/bg.png')
+
+
+.panel
+	z-index: 1
+	position: relative
+	&__wrap
+		padding-top: 11px
+		font-size: 20px
+		padding-left: (37px + 15px)
+		padding-right: (37px + 15px)
+		background: url('../../img/monogram-big-left.png') left 17px no-repeat, url('../../img/monogram-big-right.png') right 17px no-repeat
+	
+	&__data
+		padding-top: 15px
+		width: 505px
+		margin-right: 23px
+
+	&__desc
+		margin-bottom: 15px
+
+
+	&__phones
+		font-size: 30px
+		font-weight: 700
+		line-height: 41px
+		a
+			color: #531010
+	
+	&__time
+		margin-right: 25px
+		
+		
+
+
+	&__logo
+		width: 175px
+		margin-right: 27px
+		img
+			border-radius: 50%
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5)
+			border: 1px solid rgba(0, 0, 0, 0.3)
+
+	&__phones
+		padding-top: 12px
+		width: 215px
+
+	&__links
+		margin-left: auto
+		width: 215px
+		padding-top: 14px
+		font-size: 18px
+		.mdi
+			color: #6e3e3e
+			margin-right: 8px
+		li
+			margin-bottom: 2px
+		a
+			border-color: none
+			&:hover
+				color: #6e3e3e
+				border-color: #6e3e3e
+		u
+			display: inline-block
+			vertical-align: middle
+
+		
+
+.slider
+	position: relative
+	background: url('../../img/slider.png') no-repeat center
+	margin-top: -65px
+	&:before, &:after
+		content: ''
+		left: 0
+		right: 0
+		position: absolute
+		height: 7px
+		background: url('../../img/pattern-top.png') repeat-x center top
+	&:before
+		top: 0
+	&:after
+		bottom: 0
+
+	&__nav
+		display: none
+
+	&__wrap
+		position: absolute
+		width: 640px
+		background: rgba(255,255,255,.65)
+		text-align: center
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		border: 1px solid #ffffff
+		padding: 7px 5px 10px
+		&:before, &:after
+			content: ''
+			background: rgba(255,255,255,.65)
+			width: 420px
+			height: 10px
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+
+		&:before
+			top: -10px
+
+		&:after
+			bottom: -10px
+			
+	&__list
+		.slick-slide
+			height: 400px
+			position: relative
+		
+	&__title
+		font-size: 36px
+		font-weight: 700
+		&:after
+			display: block
+			content: ''
+			width: 172px
+			height: 4px
+			background-color: #fff
+			margin: 10px auto 8px
+
+		
+	&__desc
+		font-size: 19px
+		font-weight: 700
+		font-family: $font-family-2
+		
+		
+.nav
+	font-size: 19px
+	font-family: $font-family-2
+	border-bottom: 2px solid #bfbfbf
+	background-color: #fff
+	ul
+		justify-content: space-between
+		ul
+			opacity: 0
+			z-index: 2
+			visibility: hidden
+			position: absolute
+			top: 100%
+			left: -1px
+			right: -1px
+			border: 1px solid #bfbfbf
+			background-color: #ffffff
+			box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25)
+			transform: translateY(50px)
+			transition: .3s
+			text-align: left
+			padding: 14px 20px 13px
+			width: 332px
+			li
+				width: 100%
+				position: relative
+				padding-left: 13px
+				margin-bottom: 3px
+				&:before
+					content: '-'
+					margin-right: 5px
+					position: absolute
+					top: 0
+					left: 0
+				&:hover
+					a
+						color: #531010
+						border-color: #531010
+						left: 15px
+				&:last-of-type
+					margin-bottom: 0
+			a
+				font-size: 16px
+				border-color: transparent
+				color: #131313
+				left: 0
+				position: relative
+		
+	a
+		color: #531010
+	&__home
+		a
+			color: #fff
+			background-color: #531010
+			font-size: 0
+			width: 20px
+			height: 20px
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			text-align: center
+			.mdi
+				font-size: 15px
+				position: relative
+				left: 1px
+		
+	
+
+		
+	&__list
+		width: calc(100% - 20px - 100px)
+		> ul
+			text-align: center
+			justify-content: center
+			> li
+				position: relative
+				display: block
+				border-left: 1px solid #d9d9d9
+				background-image: linear-gradient(to top, #f2f2f2 0%, rgba(255, 255, 255, 0) 100%)
+				&:hover
+					ul
+						opacity: 1
+						visibility: visible
+						transform: translateY(0px)
+					a
+						background-color: transparent
+				&:last-of-type
+					border-right: 1px solid #d9d9d9
+				&.has-subnav
+					> a
+						&:after
+							content: '\f140'
+							position: absolute
+							font-family: "Material Design Icons"
+							bottom: -2px
+							left: 50%
+							transform: translateX(-50%)
+				> a
+					position: relative
+					padding: 19px 10px
+					display: block
+					background-color: #fff
+					
+
+	&__control
+		width: 100px
+		text-align: right
+		li
+			width: 100%
+
+		u
+			display: inline-block
+			width: 24px
+			height: 24px
+			border: 1px solid #ebebeb
+			background-color: #ffffff
+			border-radius: 50%
+			font-size: 15px
+			text-align: center
+			margin-right: 8px
+			line-height: 22px
+			transition: .3s
+		a
+			font-weight: 700
+			color: #1a1a1a
+			&:hover
+				u
+					background-color: #ebebeb
+
+		.count, .mdi
+			color: #531010
+
+
+	&__sub-nav
+		z-index: 4
+		opacity: 0
+		position: absolute
+		top: 100%
+		border: 1px solid #bfbfbf
+		background-color: #ffffff
+		box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25)
+		transform: translateY(50px)
+		visibility: hidden
+		transition: .3s
+		text-align: left
+		padding: 32px 0 38px
+		left: 45px
+		right: 0
+		padding-right: 22px
+		&_show
+			opacity: 1
+			z-index: 4
+			transform: translateY(0)
+			visibility: visible
+		&:before
+			content: ''
+			position: absolute
+			top: -2px
+			left: 103px
+			width: 24px
+			height: 11px
+			background: url('../../img/arrow-top.png') no-repeat center
+		&-col
+			width: 25%
+			border-right: 1px solid #ebebeb
+			padding-left: 20px
+			padding-right: 5px
+			&:last-of-type
+				border-right: none
+			p
+				font-family: $font-family-1
+				font-weight: 700
+				color: #531010
+				margin-bottom: 3px
+			ul
+				margin-bottom: 25px
+				&:last-of-type
+					margin-bottom: 0
+
+			li
+				width: 100%
+				position: relative
+				padding-left: 13px
+				margin-bottom: 3px
+				&:last-of-type
+					margin-bottom: 0
+				&:before
+					content: '-'
+					margin-right: 5px
+					position: absolute
+					top: 0
+					left: 0
+				&:hover
+					a
+						color: #531010
+						border-color: #531010
+						left: 15px
+			a
+				left: 0
+				position: relative
+				color: #131313
+				font-size: 16px
+
+	.nano
+		height: 345px
+		& > .nano-pane
+			// opacity: 1
+		& > .nano-pane
+			background-color: #b7b7b7
+			width: 4px
+			right: 10px
+			border-radius: 0
+			& > .nano-slider
+				background-color: #531010
+				border-radius: 0
+				margin: 0
+				margin-left: -2px
+				margin-right: -2px
+				width: auto
+				position: relative
+		
+	.show-large-nav_show
+		position: relative
+		display: block
+		border-left: 1px solid #d9d9d9
+		background-image: linear-gradient(to top, #f2f2f2 0%, rgba(255, 255, 255, 0) 100%)
+		a
+			background-color: transparent
+
+
+.text-top
+	padding-top: 54px
+	padding-bottom: 45px
 
 
 
+.text
+	font-family: $font-family-2
+	h1, h2, h3, h4, h5, h6
+		color: #531010
+		font-family: $font-family-1
+	h2
+		font-size: 24px
+		margin-bottom: 20px
+	p
+		margin-bottom: 20px
+		&:last-of-type
+			margin-bottom: 0
+	ul
+		&.discount
+			margin-top: 45px
+			li
+				width: calc(33.333% - 14px)
+				height: 52px
+				display: flex
+				justify-content: center
+				align-items: center
+				border: 1px solid #531010
+				background-color: #fff
+				&:nth-of-type(2)
+					margin-left: 21px
+					margin-right: 21px
+
+
+
+.main-title
+	padding-top: 38px
+	font-size: 24px
+	font-weight: 700
+	color: #531010
+
+.breadcrumbs
+	padding-top: 11px
+	font-size: 0
+	margin-bottom: 18px
+	li
+		font-family: $font-family-2
+		font-weight: 700
+		font-size: 16px
+		&:after
+			color: #531010
+			content: '\f142'
+			font-family: "Material Design Icons"
+			font-weight: 400
+			margin-left: 4px
+			margin-right: 4px
+		&:last-of-type
+			&:after
+				display: none
+	a
+		font-weight: 400
+		&:hover
+			color: #531010
+			border-color: #531010
+
+
+.aside
+	width: 350px
+	&_bg
+		border: 1px solid #ebebeb
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1)
+		background-color: #ffffff
+		padding: 20px 15px
+	&__search
+		// margin-bottom: 20px
+		
+
+
+.section
+	width: calc(100% - 350px)
+	padding-left: 40px
+
+
+
+.search
+	position: relative
+	&__input
+		height: 40px
+		font-family: $font-family-2
+		font-size: 16px
+		border: 1px solid #bfbfbf
+		width: 100%
+		padding: 0 60px 0 15px
+		font-weight: 400
+		&::placeholder
+			opacity: 1
+			color: #7e7e7e
+
+	&__btn
+		width: 50px
+		height: 34px
+		position: absolute
+		top: 3px
+		right: 3px
+		.mdi
+			color: #fff
+			font-size: 26px
+
+		
+			
+.nav-block
+	&__wrap
+		padding-bottom: 5px
+		border-bottom: 1px solid #ebebeb
+		margin-left: -15px
+		margin-right: -15px
+		padding-left: 15px
+		padding-right: 15px
+		padding-top: 25px
+		&:last-of-type
+			padding-bottom: 50px
+			border-bottom: none
+		
+	&__title
+		font-size: 18px
+		font-weight: 700
+		color: #531010
+		margin-bottom: 5px
+
+	&__list
+		margin-left: -15px
+		margin-right: -15px
+		padding-left: 15px
+		li
+			position: relative
+			font-size: 17px
+			width: 100%
+			font-family: $font-family-2
+			padding-left: 20px
+			margin-bottom: 4px
+			padding-right: 15px
+			padding-top: 1px
+			padding-bottom: 1px
+			&:last-of-type
+				margin-bottom: 0
+			&:before
+				top: 10px
+				left: 0
+				position: absolute
+				display: block
+				content: ''
+				width: 7px
+				height: 3px
+				background: #531010
+				border-radius: 20px
+			&:after
+				position: absolute
+				content: ''
+				top: 8px
+				left: 8px
+				width: 7px
+				height: 7px
+				background: #531010
+				border-radius: 50%
+			&.has-subnav
+				cursor: pointer
+				background-position: 100% 0
+				&:hover
+					background-image: linear-gradient(to left, #f2f2f2 0%, rgba(255, 255, 255, 0) 100%)
+					ul
+						opacity: 1
+						position: absolute
+						transform: translateX(0)
+						visibility: visible
+				.arrow-right
+					position: absolute
+					right: 0
+					top: -1px
+					position: absolute
+					&:after
+						display: block
+						// display: none
+						content: '\f142'
+						font-family: "Material Design Icons"
+						color: #531010
+						font-size: 20px
+				ul
+					z-index: 2
+					width: 255px
+					background-color: #fff
+					right: -255px
+					position: absolute
+					top: -15px
+					border: 1px solid #bfbfbf
+					padding: 14px 20px 14px
+					transform: translateX(50px)
+					opacity: 0
+					visibility: hidden
+					transition: .3s
+					&:after
+						content: ''
+						position: absolute
+						top: 13px
+						left: -2px
+						width: 11px
+						height: 24px
+						background: url('../../img/arrow-left.png') no-repeat center
+					li
+						&:hover
+							cursor: default
+							a
+								cursor: pointer
+
+
+				li
+					font-size: 16px
+					&:hover
+						a
+							left: 15px
+					&:before
+						display: none
+					&:after
+						content: '-'
+						width: auto
+						height: auto
+						background: none
+						top: 0
+
+					a
+						position: relative
+						left: 0
+
+				
+			a
+				
+				&:hover
+					color: #531010
+					border-color: #531010
+
+
+
+.catalog
+	&__filter
+		margin-left: -15px
+		margin-right: -15px
+	&__select
+		width: calc(25% - 30px)
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 18px
+		
+	&__list
+		margin-left: -15px
+		margin-right: -15px
+		&_pt
+			padding-top: 12px
+	&__item
+		width: calc(33.33% - 30px)
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 30px
+		border: 1px solid #e3c3bd
+
+
+
+.item
+	position: relative
+	display: block
+	&__control
+		&-item
+			display: flex
+			justify-content: center
+			align-items: center
+			z-index: 1
+			top: 4px
+			position: absolute
+			width: 36px
+			height: 36px
+			background-color: #fff
+			font-size: 18px
+			color: #531010
+			border-radius: 50%
+			&:nth-of-type(1)
+				left: 5px
+
+			&:nth-of-type(2)
+				right: 5px
+		
+	&__img
+		position: relative
+		&:after
+			content: ''
+			border: 1px solid #ffffff
+			position: absolute
+			top: 10px
+			left: 10px
+			right: 10px
+			bottom: 14px
+
+	&__text
+		font-size: 18px
+		height: 65px
+		padding: 5px 15px
+		text-align: center
+		font-weight: 700
+		a
+			color: #531010
+			&:hover
+				border-color: #531010
+
+		
+
+		
+.jq-selectbox
+	z-index: 2
+	position: relative
+	font-family: $font-family-2
+	&__select
+		position: relative
+		border: 1px solid #e3c3bd
+		background-color: #ffffff
+		padding: 0
+		font-size: 18px
+		height: 52px
+		display: flex
+		align-items: center
+		cursor: pointer
+		&-text
+			padding-left: 12px
+			padding-right: 25px
+	&__trigger
+		position: absolute
+		top: 50%
+		right: 10px
+		transform: translateY(-50%)
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 5px 5.5px 0 5.5px
+		border-color: #131313 transparent transparent transparent
+
+	&__dropdown
+		border: 1px solid #e3c3bd
+		background-color: #fff
+		font-size: 16px
+		padding: 10px 12px
+		position: absolute
+		top: 51px
+		left: 0
+		right: 0
+		li
+			width: 100%
+			margin-bottom: 5px
+			cursor: pointer
+			&:last-of-type
+				margin-bottom: 0
+			&:hover
+				color: #531010
+			
+	.select
+		display: none
+
+
+.pagination
+	ul
+		font-family: $font-family-2
+		font-size: 26px
+		font-weight: 700
+		justify-content: center
+	li
+		&:after
+			content: ', '
+			margin-right: 6px
+		&.selected
+			a
+				color: #531010
+				border-color: #531010
+		a
+			&:hover
+				color: #531010
+				border-color: #531010
+		&.prev, &.next, &:nth-last-of-type(2), &.dots
+			&:after
+				display: none
+		&.dots
+			margin-right: 5px
+		&.prev, &.next
+			position: relative
+			top: -2px
+			a
+				border: 2px solid #fffcf9
+				background-color: #531010
+				display: block
+				width: 35px
+				height: 35px
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 0
+				&:after
+					display: block
+					content: ''
+					width: 0
+					height: 0
+					border-style: solid
+		&.prev
+			margin-right: 20px
+			font-size: 0
+			a
+				&:after
+					border-width: 5px 6px 5px 0
+					border-color: transparent #ffffff transparent transparent
+
+		&.next
+			margin-left: 20px
+			a
+				&:after
+					border-width: 5px 0 5px 6px
+					border-color: transparent transparent transparent #ffffff
+
+		
+
+// margin-size : maz
+
+.mt65
+	margin-top: 65px
+
+
+.form
+	&__wrap
+		position: relative
+		background-color: #ffffff
+		padding: 20px 20px 20px 40px
+		border: 1px solid #bfbfbf
+		&:before, &:after
+			content: ''
+			left: 0
+			right: 0
+			position: absolute
+			height: 7px
+			background: url('../../img/pattern-top.png') repeat-x center top
+		&:before
+			top: -1px
+		&:after
+			bottom: -1px
+	&__title
+		font-size: 20px
+		font-weight: 700
+		color: #531010
+		margin-bottom: 6px
+
+	&__text
+		font-size: 14px
+		font-family: $font-family-2
+		margin-bottom: 35px
+		color: #1a1a1a
+
+	&__input
+		margin-bottom: 34px
+
+	&__desc
+		font-family: $font-family-2
+		text-align: center
+		margin-top: 16px
+		font-size: 16px
+		.mdi
+			color: #6e3e3e
+			margin-left: 4px
+			margin-right: 4px
+
+	&__left
+		width: 260px
+
+	&__mid
+		margin-left: 35px
+		margin-right: 35px
+		width: calc(100% - 304px - 70px - 260px)
+
+	&__right
+		width: 304px
+		
+	&__captcha
+		margin-bottom: 6px
+
+	&__btn
+		width: 100%
+		margin-right: 10px
+
+		
+		
+		
+		
+	
+.card
+	&__3d
+		display: block
+		z-index: 1
+		position: relative
+		width: 335px
+		height: 40px
+		border: 1px solid #e3c3bd
+		display: flex
+		justify-content: center
+		align-items: center
+		font-family: $font-family-2
+		color: #531010
+		background-color: #fff
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: -20px
+		.mdi
+			font-size: 24px
+			position: relative
+			top: 1px
+			margin-right: 5px
+		&:hover
+			color: #fff
+			background-color: #531010
+			border-color: #531010
+
+	&__slider
+
+		
+		
+	&__image
+		border: 1px solid #e3c3bd
+		&s
+			padding-left: 53px
+			padding-right: 53px
+			margin-top: -54px
+			.slick-current
+				.card__images-item
+					img
+						border-color: #531010
+			&-item
+				padding-left: 7px
+				padding-right: 7px
+				cursor: pointer
+				img
+					transition: .3s
+					border: 2px solid #f1e1de
+
+			.slick-arrow
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				width: 30px
+				height: 60px
+				border: 1px solid #e3c3bd
+				background-color: #ffffff
+				font-size: 0
+				display: flex
+				justify-content: center
+				align-items: center
+				transition: .3s
+
+			.slick-prev
+				left: 15px
+				&:before
+					display: block
+					content: '\f141'
+					font-size: 34px
+					color: #000000
+					font-family: "Material Design Icons"
+
+
+			.slick-next
+				right: 15px
+				&:before
+					display: block
+					content: '\f142'
+					font-size: 34px
+					color: #000000
+					font-family: "Material Design Icons"
+
+			.slick-arrow
+				&:hover
+					border-color: #531010
+
+		
+	&__left
+		width: 440px
+
+	&__right
+		width: calc(100% - 440px)
+		padding-left: 35px
+		font-family: $font-family-2
+
+	&__vendor-code
+		margin-bottom: 20px
+		
+
+		
+
+.vendor-code
+	font-size: 24px
+	font-weight: 700
+	color: #531010
+	span
+		display: inline-block
+		vertical-align: middle
+		font-size: 20px
+		color: #6e6e6e
+		
+
+
+		
+		
+		
+		
+
+
+
+
+.slick-arrow
+	z-index: 10
+	cursor: pointer
+
+
+.arrows-white
+	.slick-arrow
+		width: 45px
+		height: 45px
+		background-color: #fff
+		border-radius: 50%
+		transition: .3s
+		font-size: 0
+	.slick-prev
+		&:before
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 6.5px 7px 6.5px 0
+			border-color: transparent #531010 transparent transparent
+			transition: .3s
+
+	.slick-next
+		&:before
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 6.5px 0 6.5px 7px
+			border-color: transparent transparent transparent #531010
+			transition: .3s
+
+.arrows-middle
+	.slick-arrow
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+	.slick-prev
+		left: 50%
+		margin-left: -670px
+
+	.slick-next
+		right: 50%
+		margin-right: -670px
 
 
 .hidden-lg
