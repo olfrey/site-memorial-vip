@@ -46,7 +46,9 @@ gulp.task('scripts', function() {
 		'src/template/libs/jquery-mask-plugin/dist/jquery.mask.js',
 		'src/template/libs/fancybox/dist/jquery.fancybox.js',
 		'src/template/libs/slick-carousel/slick/slick.js',
-		'src/template/libs/nanoScrollerJs/nanoScrollerJs.js',
+		// 'src/template/libs/nanoScrollerJs/nanoScrollerJs.js',
+		// 'src/template/libs/custom-scroll/source/jquery.custom-scroll.js',
+		'src/template/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
 		'src/template/libs/jquery.form-styler/dist/jquery.formstyler.js'
 		])
 		.pipe(concat('libs.js'))
