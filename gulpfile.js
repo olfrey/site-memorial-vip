@@ -46,8 +46,6 @@ gulp.task('scripts', function() {
 		'src/assets/tmpls/libs/jquery-mask-plugin/dist/jquery.mask.js',
 		'src/assets/tmpls/libs/fancybox/dist/jquery.fancybox.js',
 		'src/assets/tmpls/libs/slick-carousel/slick/slick.js',
-		// 'src/assets/tmpls/libs/nanoScrollerJs/nanoScrollerJs.js',
-		// 'src/assets/tmpls/libs/custom-scroll/source/jquery.custom-scroll.js',
 		'src/assets/tmpls/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
 		'src/assets/tmpls/libs/jquery.form-styler/dist/jquery.formstyler.js'
 		])

@@ -1693,7 +1693,8 @@ input, .btn, .slick-slide, textarea {
         margin-left: 21px;
         margin-right: 21px; }
   .text ul.data li {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-bottom: 0; }
     .text ul.data li:before, .text ul.data li:after {
       display: none; }
   .text p, .text ul, .text ol {
@@ -1778,6 +1779,7 @@ input, .btn, .slick-slide, textarea {
   margin-right: -1px; }
 
 .types__item {
+  display: block;
   position: relative;
   width: 33.333%;
   padding: 1px; }
@@ -2942,7 +2944,7 @@ input, .btn, .slick-slide, textarea {
     padding-left: 15px;
     padding-right: 15px; }
 
-.other__item .catalog__item {
+.other__item .catalog__item, .other__item .types__item {
   margin-left: 0;
   margin-right: 0;
   width: 100%; }
@@ -3281,6 +3283,9 @@ input, .btn, .slick-slide, textarea {
 
 .mt45 {
   margin-top: 45px; }
+
+.mt50 {
+  margin-top: 50px; }
 
 .mt55 {
   margin-top: 55px; }
