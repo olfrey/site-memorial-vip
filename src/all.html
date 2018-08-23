@@ -4,11 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-	<link rel="stylesheet" href="template/styles/css/style.css?ver=02" />
-	<link rel="stylesheet" href="template/styles/css/responsive.css?ver=02" />
-	<script src="template/scripts/libs.js?ver=02"></script>
-	<script src="template/scripts/common.js?ver=02"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<!--[if lt IE 9]>
 	<script>
 		document.createElement('header');
@@ -24,6 +19,7 @@
 <body>
 <div class="main-wrap">
 	<header class="header">
+		<!-- `Панель` -->
 		<div class="panel">
 			<div class="case">
 				<div class="panel__wrap row">
@@ -34,22 +30,25 @@
 							<div class="panel__email"><a href="mailto:memorialvip@mail.ru">memorialvip@mail.ru</a></div>
 						</div>
 					</div>
-					<div class="panel__logo"><a href=""><img src="upload/logo.png" alt=""></a></div>
+					<div class="panel__logo"><a href=""><img src="upload/logo.png" alt="" title=""></a></div>
 					<div class="panel__phones">
 						<p><a href="tel:+79265770705">8 926 577 07 05</a></p>
 						<p><a href="tel:+79261922988">8 926 192 29 88</a></p>
 					</div>
 					<div class="panel__links">
-						<u>
+						<ul>
 							<li><u><span class="mdi mdi-phone-classic"></span></u><a data-fancybox data-src="#popup-callback" href="javascript:;">Заказать звонок</a></li>
 							<li><u><span class="mdi mdi-account"></span></u><a data-fancybox data-src="#popup-order" href="javascript:;">Вызвать замерщика</a></li>
 							<li><u><span class="mdi mdi-message-text"></span></u><a data-fancybox data-src="#popup-message" href="javascript:;">Написать письмо</a></li>
-						</u>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Конец `Панель` -->
+
 		<div class="slider">
+			<!-- `Слайды` -->
 			<ul class="slider__list arrows arrows_white arrows_middle">
 				<li>
 					<span class="slider__wrap">
@@ -70,6 +69,9 @@
 					</span>
 				</li>
 			</ul>
+			<!-- Конец `Слайды` -->
+
+			<!-- `Навигация в шапке` -->
 			<div class="slider__nav">
 				<ul>
 					<li><a href="">Конфессионные памятники</a></li>
@@ -79,7 +81,10 @@
 					<li><a href="">Семейные памятники</a></li>
 				</ul>
 			</div>
+			<!-- Конец `Навигация в шапке` -->
 		</div>
+
+		<!-- `Главная навигация` -->
 		<nav class="nav">
 			<div class="case">
 				<div class="nav__wrap row i-mid">
@@ -202,23 +207,14 @@
 				</div>
 			</div>
 		</nav>
+		<!-- Конец `Главная навигация` -->
 	</header>
 
 	<div class="wrap">
-		<div class="column">
-			<div class="column__item column__item_left">
-				<div class="column__top"></div>
-				<div class="column__mid"></div>
-				<div class="column__foot"></div>
-			</div>
-			<div class="column__item column__item_right">
-				<div class="column__top"></div>
-				<div class="column__mid"></div>
-				<div class="column__foot"></div>
-			</div>
-		</div>
+		<!-- `Контент страницы` -->
 		<main class="main case">
-			<div class="text-top text"> <!-- Главная страница -->
+			<!-- `Текстовый блок` -->
+			<div class="text-top text">
 				<h2>Заказать памятник на могилу</h2>
 				<p>Будьте уверены, заказывая у нас памятник: изготовление его будет доверено резчикам и граверам высокого профессионализма и опыта. Эстетичность и долговечность – вот два главных качества нашей продукции. <br>Обратившись к нам, можно не беспокоиться о том, как доставить надгробие на место. Доставка и установка памятников в Москве, в Московской области также выполняется нашими работниками, которые произведут качественный монтаж надгробия, учитывая и особенности рельефа и почвы. </p>
 				<ul class="discount">
@@ -227,8 +223,14 @@
 					<li>Скидка 5% Пенсионерам</li>
 				</ul>
 			</div>
-			<div class="main-title">Черный памятник 1-091</div> <!-- Карточка товара -->
-			<div class="breadcrumbs"> <!-- Карточка товара -->
+			<!-- Конец `Текстовый блок` -->
+
+			<!-- `Главный заголовок` -->
+			<div class="main-title">Черный памятник 1-091</div>
+			<!-- Конец `Главный заголовок` -->
+
+			<!-- `Хлебные крошки` -->
+			<div class="breadcrumbs">
 				<ul>
 					<li><a href="">Главная</a></li>
 					<li><a href="">Ритуальные памятники</a></li>
@@ -236,12 +238,18 @@
 					<li>Черный памятник 1-091</li>
 				</ul>
 			</div>
+			<!-- Конец `Хлебные крошки` -->
+
 			<div class="cols row i-top">
-				<aside class="aside aside_bg"> <!-- Главная страница -->
+				<aside class="aside aside_bg">
+					<!-- `Поиск` -->
 					<div class="aside__search search">
 						<input type="text" class="search__input" placeholder="Поиск по названию">
 						<button class="search__btn btn btn_brown"><span class="mdi mdi-magnify"></span></button>
 					</div>
+					<!-- Конец `Поиск` -->
+
+					<!-- `Боковая навигация` -->
 					<div class="nav-block">
 						<div class="nav-block__wrap">
 							<div class="nav-block__title">Главное:</div>
@@ -330,9 +338,11 @@
 							</div>
 						</div>
 					</div>
+					<!-- Конец `Боковая навигация` -->
 				</aside>
-				<section class="section">
-					<div class="catalog"> <!-- Ритуальные памятники // Главная -->
+				<div class="section">
+					<!-- `Каталог` -->
+					<div class="catalog">
 						<div class="catalog__title title"></div>
 						<div class="catalog__filter row">
 							<select class="catalog__select select" data-placeholder="По типу">
@@ -399,7 +409,7 @@
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
 						      </div>
-						      <div class="item__img"><img src="upload/catalog/1.png" alt=""></div>
+						      <div class="item__img"><img src="upload/catalog/1.png" alt="" title=""></div>
 						      <div class="item__text"><a href="">Обычный фигурный</a></div>
 						    </div>
 						  </div>
@@ -409,7 +419,7 @@
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
 						      </div>
-						      <div class="item__img"><img src="upload/catalog/2.png" alt=""></div>
+						      <div class="item__img"><img src="upload/catalog/2.png" alt="" title=""></div>
 						      <div class="item__text"><a href="">Белый гранит в виде креста</a></div>
 						    </div>
 						  </div>
@@ -419,7 +429,7 @@
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
 						      </div>
-						      <div class="item__img"><img src="upload/catalog/3.png" alt=""></div>
+						      <div class="item__img"><img src="upload/catalog/3.png" alt="" title=""></div>
 						      <div class="item__text"><a href="">Двойной элитный памятник</a></div>
 						    </div>
 						  </div>
@@ -429,7 +439,7 @@
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
 						      </div>
-						      <div class="item__img"><img src="upload/catalog/4.png" alt=""></div>
+						      <div class="item__img"><img src="upload/catalog/4.png" alt="" title=""></div>
 						      <div class="item__text"><a href="">Черный гранит в виде книги</a></div>
 						    </div>
 						  </div>
@@ -439,7 +449,7 @@
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
 						      </div>
-						      <div class="item__img"><img src="upload/catalog/5.png" alt=""></div>
+						      <div class="item__img"><img src="upload/catalog/5.png" alt="" title=""></div>
 						      <div class="item__text"><a href="">Эксклюзивный ангел с крестом</a></div>
 						    </div>
 						  </div>
@@ -449,7 +459,7 @@
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
 						      </div>
-						      <div class="item__img"><img src="upload/catalog/6.png" alt=""></div>
+						      <div class="item__img"><img src="upload/catalog/6.png" alt="" title=""></div>
 						      <div class="item__text"><a href="">Обычный ангел с крестом</a></div>
 						    </div>
 						  </div>
@@ -468,6 +478,9 @@
 							</ul>
 						</div>
 					</div>
+					<!-- Конец `Каталог` -->
+					
+					<!-- `Форма` -->
 					<div class="form mt65">
 					  <div class="form__wrap">
 					    <div class="form__title title">Бесплатный вызов замерщика</div>
@@ -475,19 +488,19 @@
 					    <div class="form__elements row">
 					      <div class="form__left">
 					        <div class="form__input input">
-					          <label for="" class="input__text">Ваше имя *</label>
+					          <label class="input__text">Ваше имя *</label>
 					          <input type="text" class="input__wrap">
 					          <div class="input__error error">Заполните поле</div>
 					        </div>
 					        <div class="form__input input input_phone">
-					          <label for="" class="input__text">Телефон *</label>
+					          <label class="input__text">Телефон *</label>
 					          <input type="text" class="input__wrap">
 					          <div class="input__error error">Заполните поле</div>
 					        </div>
 					      </div>
 					      <div class="form__mid">
 					        <div class="form__textarea textarea">
-					          <label for="" class="textarea__text">Сообщение *</label>
+					          <label class="textarea__text">Сообщение *</label>
 					          <textarea class="textarea__wrap"></textarea>
 					          <div class="textarea__error error">Заполните поле</div>
 					        </div>
@@ -500,121 +513,124 @@
 					  </div>
 					  <div class="form__desc">Есть вопросы? Закажите бесплатный звонок и мы вам поможем - <span class="mdi mdi-phone-classic"></span> Заказать звонок</div>
 					</div>
-					<div class="card"> <!-- Карточка товара -->
+					<!-- Конец `Форма` -->
+
+					<!-- `Карточка товара` -->
+					<div class="card">
 						<div class="card__wrap row">
 							<div class="card__left">
 								<a href="" class="card__3d"><span class="mdi mdi-package-variant-closed"></span> Посмотреть памятник в 3D</a>
 								<div class="card__sliders">
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 									<div class="card__slider">
 										<div class="card__image">
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__image-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__image-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 										<div class="card__images">
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
-											<div class="card__images-item"><img src="upload/product/1.png" alt=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
+											<div class="card__images-item"><img src="upload/product/1.png" alt="" title=""></div>
 										</div>
 									</div>
 								</div>
@@ -659,41 +675,44 @@
 							<div class="card__type-title">Цвет гранита</div>
 							<div class="card__type-list row">
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/1.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/1.png" alt="" title=""></div>
 									<div class="card__type-name">Диабаз</div>
 								</div>
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/2.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/2.png" alt="" title=""></div>
 									<div class="card__type-name">Сюськаянсаари</div>
 								</div>
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/3.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/3.png" alt="" title=""></div>
 									<div class="card__type-name">Лезниковский</div>
 								</div>
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/4.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/4.png" alt="" title=""></div>
 									<div class="card__type-name">Токовский</div>
 								</div>
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/5.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/5.png" alt="" title=""></div>
 									<div class="card__type-name">Перексинит</div>
 								</div>
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/6.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/6.png" alt="" title=""></div>
 									<div class="card__type-name">Габбро</div>
 								</div>
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/7.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/7.png" alt="" title=""></div>
 									<div class="card__type-name">Змеевик</div>
 								</div>
 								<div class="card__type-item">
-									<div class="card__type-img"><img src="upload/granite/8.png" alt=""></div>
+									<div class="card__type-img"><img src="upload/granite/8.png" alt="" title=""></div>
 									<div class="card__type-name">Мрамор Коелга</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="text-section text"> <!-- Виды гранита -->
+					<!-- Конец `Карточка товара` -->
+
+					<!-- `Текстовый блок` -->
+					<div class="text-section text">
 						<p>Наиболее популярными материалами для изготовления памятников являются мрамор и гранит. Это обусловливается такими свойствами данных материалов, как:</p>
 						<ul>
 							<li>высокая твердость;</li>
@@ -704,59 +723,62 @@
 						<p>В своей работе чаще всего мы используем такие породы гранита, как Габбро и Диабаз, обладающие темно-серым и черным оттенками соответственно. Такие материалы отличаются высокой прочностью – не потребуются косметические и реставрационные работы на протяжении нескольких десятков лет. Выполненные на граните этих пород граверные работы хорошо контрастируют с полировкой.</p>
 						<p>По желанию клиента для изготовления памятников мы можем использовать и другие виды натурального камня (к примеру, известняк, песчаник), которые также отличаются уникальной фактурой и долговечностью.</p>
 					</div>
-					<div class="types mt40"> <!-- Виды гранита -->
+					<!-- Конец `Текстовый блок` -->
+
+					<!-- `Виды гранита` -->
+					<div class="types mt40">
 						<div class="types__list row">
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/1.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/1.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Диабаз</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
 								</div>
 							</a>
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/2.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/2.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Сюськаянсаари</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
 								</div>
 							</a>
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/3.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/3.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Лезниковский</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
 								</div>
 							</a>
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/4.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/4.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Токовский</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
 								</div>
 							</a>
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/5.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/5.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Перексинит</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
 								</div>
 							</a>
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/6.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/6.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Габбро</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
 								</div>
 							</a>
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/7.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/7.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Змеевик</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
 								</div>
 							</a>
 							<a href="" class="types__item">
-								<div class="types__img"><img src="upload/types/8.png" alt=""></div>
+								<div class="types__img"><img src="upload/types/8.png" alt="" title=""></div>
 								<div class="types__text">
 									<div class="types__title">Мрамор Коелга</div>
 									<div class="types__link"><span class="mdi mdi-plus-box-outline"></span></div>
@@ -764,7 +786,10 @@
 							</a>
 						</div>
 					</div>
-					<div class="contacts row i-top"> <!-- Контакты -->
+					<!-- Конец `Виды гранита` -->
+
+					<!-- `Контакты` -->
+					<div class="contacts row i-top"> 
 						<div class="contacts__col">
 							<div class="contacts__block">
 								<div class="contacts__title title">Адрес:</div>
@@ -791,25 +816,33 @@
 							</div>
 						</div>
 					</div>
-					<!-- TODO: Реквизиты -->
-					<div class="photos photos_lines"> <!-- Контакты -->
+					<!-- Конец `Контакты` -->
+					
+					<!-- `Фото проезда` -->
+					<div class="photos photos_lines"> 
 						<div class="photos__title title">Фото проезда:</div>
 						<div class="photos__list row">
-							<div class="photos__item"><a href="upload/photos/1.png" data-fancybox="photos"><img src="upload/photos/1.png" alt=""></a></div>
-							<div class="photos__item"><a href="upload/photos/2.png" data-fancybox="photos"><img src="upload/photos/2.png" alt=""></a></div>
-							<div class="photos__item"><a href="upload/photos/3.png" data-fancybox="photos"><img src="upload/photos/3.png" alt=""></a></div>
-							<div class="photos__item"><a href="upload/photos/4.png" data-fancybox="photos"><img src="upload/photos/4.png" alt=""></a></div>
+							<div class="photos__item"><a href="upload/photos/1.png" data-fancybox="photos"><img src="upload/photos/1.png" alt="" title=""></a></div>
+							<div class="photos__item"><a href="upload/photos/2.png" data-fancybox="photos"><img src="upload/photos/2.png" alt="" title=""></a></div>
+							<div class="photos__item"><a href="upload/photos/3.png" data-fancybox="photos"><img src="upload/photos/3.png" alt="" title=""></a></div>
+							<div class="photos__item"><a href="upload/photos/4.png" data-fancybox="photos"><img src="upload/photos/4.png" alt="" title=""></a></div>
 						</div>
 					</div>
-					<div class="map"> <!-- Контакты -->
+					<!-- Конец `Фото проезда` -->
+
+					<!-- `Карта` -->
+					<div class="map">
 						<div class="map__title title">Мы на карте: </div>
 						<div class="map__wrap">
 							<div id="map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaee9e36b40a733f999c457b8e0d75c492478c66376f424a9dbde1415ef55f353&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe></div>
 						</div>
 					</div>
-					<div class="granite"> <!-- Гранит -->
+					<!-- Конец `Карта` -->
+
+					<!-- `Описание гранита` -->
+					<div class="granite">
 						<div class="granite__text text">
-							<img src="upload/types/big/1.png" alt="" class="left">
+							<img src="upload/types/big/1.png" alt="" title="" class="left">
 							<p>Полнокристаллическая мелкозернистая вулканическая горная порода, по минеральному составу близкая к базальту.</p>
 							<ul class="data">
 								<li><strong>Регион добычи:</strong> Кавказ, Крым, Карелия, Алтай, Урал.</li>
@@ -825,6 +858,9 @@
 							<p>Один из самых популярных материалов для изготовления памятников на кладбище. Практически 90% всех гранитных изделий ритуального направления в России выполнены именно из этого камня. Габбро-диабаз после полировки дает классический черный цвет, он стойкий к влаге, перепадам температур, не выцветает от солнечных лучей. Но все-таки он имеет один недостаток: по своей природе диабаз иногда имеет белесые включения, от которых никак не избавиться при обработке. Данные включения портят внешний вид и мешают гравировать портреты.</p>
 						</div>
 					</div>
+					<!-- Конец `Описание гранита` -->
+
+					<!-- `Акции и скидки` -->
 					<div class="shares">
 						<div class="shares__sort row">
 							<select class="shares__select select" data-placeholder="Только акции">
@@ -938,6 +974,7 @@
 								<div class="shares__toggle"><span>Развернуть текст</span></div>
 							</div>
 						</div>
+						<!-- `Пагинация` -->
 						<div class="shares__pagination pagination">
 							<ul>
 								<li class="prev"><a href=""></a></li>
@@ -951,8 +988,12 @@
 								<li class="next"><a href=""></a></li>
 							</ul>
 						</div>
+						<!-- Конец `Пагинация` -->
 					</div>
-					<div class="comparison"> <!-- Сравнение -->
+					<!-- Конец `Акции и скидки` -->
+
+					<!-- `Сравнение` -->
+					<div class="comparison">
 						<div class="comparison__list">
 							<div class="scroll">
 								<div class="nano-content row">
@@ -960,7 +1001,7 @@
 										<div class="comparison__head row">
 											<div class="comparison__left">
 												<div class="comparison__move"><span class="mdi mdi-cursor-move"></span></div>
-												<div class="comparison__img"><img src="upload/product/1.png" alt=""></div>
+												<div class="comparison__img"><img src="upload/product/1.png" alt="" title=""></div>
 											</div>
 											<div class="comparison__right">
 												<div class="comparison__vendor-code vendor-code"><span>Артикул:</span> 1-561</div>
@@ -1000,7 +1041,7 @@
 										<div class="comparison__head row">
 											<div class="comparison__left">
 												<div class="comparison__move"><span class="mdi mdi-cursor-move"></span></div>
-												<div class="comparison__img"><img src="upload/product/1.png" alt=""></div>
+												<div class="comparison__img"><img src="upload/product/1.png" alt="" title=""></div>
 											</div>
 											<div class="comparison__right">
 												<div class="comparison__vendor-code vendor-code"><span>Артикул:</span> 1-561</div>
@@ -1040,7 +1081,7 @@
 										<div class="comparison__head row">
 											<div class="comparison__left">
 												<div class="comparison__move"><span class="mdi mdi-cursor-move"></span></div>
-												<div class="comparison__img"><img src="upload/product/1.png" alt=""></div>
+												<div class="comparison__img"><img src="upload/product/1.png" alt="" title=""></div>
 											</div>
 											<div class="comparison__right">
 												<div class="comparison__vendor-code vendor-code"><span>Артикул:</span> 1-561</div>
@@ -1080,7 +1121,7 @@
 										<div class="comparison__head row">
 											<div class="comparison__left">
 												<div class="comparison__move"><span class="mdi mdi-cursor-move"></span></div>
-												<div class="comparison__img"><img src="upload/product/1.png" alt=""></div>
+												<div class="comparison__img"><img src="upload/product/1.png" alt="" title=""></div>
 											</div>
 											<div class="comparison__right">
 												<div class="comparison__vendor-code vendor-code"><span>Артикул:</span> 1-561</div>
@@ -1120,14 +1161,20 @@
 							</div>
 						</div>
 					</div>
-					<div class="certificates"> <!-- Сертификарты -->
+					<!-- Конец `Сравнение` -->
+
+					<!-- `Сертификарты` -->
+					<div class="certificates"> 
 						<div class="certificates__list arrows arrows_brown arrows_middle">
-							<div class="certificates__item"><a href="upload/certificates/1.png" data-fancybox="certificates"><img src="upload/certificates/1.png" alt=""></a></div>
-							<div class="certificates__item"><a href="upload/certificates/2.png" data-fancybox="certificates"><img src="upload/certificates/2.png" alt=""></a></div>
-							<div class="certificates__item"><a href="upload/certificates/1.png" data-fancybox="certificates"><img src="upload/certificates/1.png" alt=""></a></div>
+							<div class="certificates__item"><a href="upload/certificates/1.png" data-fancybox="certificates"><img src="upload/certificates/1.png" alt="" title=""></a></div>
+							<div class="certificates__item"><a href="upload/certificates/2.png" data-fancybox="certificates"><img src="upload/certificates/2.png" alt="" title=""></a></div>
+							<div class="certificates__item"><a href="upload/certificates/1.png" data-fancybox="certificates"><img src="upload/certificates/1.png" alt="" title=""></a></div>
 						</div>
 					</div>
-					<div class="filter-tabs"> <!-- Изделие -->
+					<!-- Конец `Сертификарты` -->
+
+					<!-- `Табы сортировки` -->
+					<div class="filter-tabs">
 						<ul>
 							<li><a href="">Кованые ограды</a></li>
 							<li><a href="">Гранитные ограды</a></li>
@@ -1135,39 +1182,47 @@
 							<li class="selected"><a href="">Все ограды</a></li>
 						</ul>
 					</div>
-					<div class="services"> <!-- Услуги -->
-						<div class="services__list row row-">
+					<!-- Конец `Табы сортировки` -->
+
+
+					<!-- `Услуги` -->
+					<div class="services">
+						<div class="services__list row">
 							<div class="services__item">
-								<div class="services__img"><img src="upload/catalog/7.png" alt=""></div>
+								<div class="services__img"><img src="upload/catalog/7.png" alt="" title=""></div>
 								<div class="services__text"><a href="">Уход за могилой</a></div>
 							</div>
 							<div class="services__item">
-								<div class="services__img"><img src="upload/catalog/8.png" alt=""></div>
+								<div class="services__img"><img src="upload/catalog/8.png" alt="" title=""></div>
 								<div class="services__text"><a href="">Установка памятников</a></div>
 							</div>
 							<div class="services__item">
-								<div class="services__img"><img src="upload/catalog/3.png" alt=""></div>
+								<div class="services__img"><img src="upload/catalog/3.png" alt="" title=""></div>
 								<div class="services__text"><a href="">Комплексное оформление могилы</a></div>
 							</div>
 							<div class="services__item">
-								<div class="services__img"><img src="upload/catalog/9.png" alt=""></div>
+								<div class="services__img"><img src="upload/catalog/9.png" alt="" title=""></div>
 								<div class="services__text"><a href="">3D проектирование</a></div>
 							</div>
 							<div class="services__item">
-								<div class="services__img"><img src="upload/catalog/1.png" alt=""></div>
+								<div class="services__img"><img src="upload/catalog/1.png" alt="" title=""></div>
 								<div class="services__text"><a href="">Визуальное оформление памятника</a></div>
 							</div>
 							<div class="services__item">
-								<div class="services__img"><img src="upload/catalog/2.png" alt=""></div>
+								<div class="services__img"><img src="upload/catalog/2.png" alt="" title=""></div>
 								<div class="services__text"><a href="">Благоустройство захоронений</a></div>
 							</div>
 							<div class="services__item">
-								<div class="services__img"><img src="upload/catalog/9.png" alt=""></div>
+								<div class="services__img"><img src="upload/catalog/9.png" alt="" title=""></div>
 								<div class="services__text"><a href="">Ритуальная флористика</a></div>
 							</div>
 						</div>
 					</div>
-					<div class="jobs"> <!-- Вакансии -->
+					<!-- Конец `Услуги` -->
+
+
+					<!-- `Вакансии` -->
+					<div class="jobs">
 						<div class="jobs__list">
 							<div class="jobs__item">
 								<div class="jobs__head">
@@ -1261,7 +1316,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="portfolio"> <!-- Наши работы -->
+					<!-- Конец `Вакансии` -->
+
+					<!-- `Наши работы` -->
+					<div class="portfolio">
 						<div class="portfolio__sort row">
 							<select class="portfolio__select select" data-placeholder="По типу">
 								<option></option>
@@ -1285,15 +1343,16 @@
 							</select>
 						</div>
 						<div class="portfolio__list row">
-							<div class="portfolio__item"><a href="upload/portfolio/1.png" data-fancybox="portfolio"><img src="upload/portfolio/1.png" alt=""></a></div>
-							<div class="portfolio__item"><a href="upload/portfolio/2.png" data-fancybox="portfolio"><img src="upload/portfolio/2.png" alt=""></a></div>
-							<div class="portfolio__item"><a href="upload/portfolio/3.png" data-fancybox="portfolio"><img src="upload/portfolio/3.png" alt=""></a></div>
-							<div class="portfolio__item"><a href="upload/portfolio/4.png" data-fancybox="portfolio"><img src="upload/portfolio/4.png" alt=""></a></div>
-							<div class="portfolio__item"><a href="upload/portfolio/1.png" data-fancybox="portfolio"><img src="upload/portfolio/1.png" alt=""></a></div>
-							<div class="portfolio__item"><a href="upload/portfolio/2.png" data-fancybox="portfolio"><img src="upload/portfolio/2.png" alt=""></a></div>
-							<div class="portfolio__item"><a href="upload/portfolio/3.png" data-fancybox="portfolio"><img src="upload/portfolio/3.png" alt=""></a></div>
-							<div class="portfolio__item"><a href="upload/portfolio/4.png" data-fancybox="portfolio"><img src="upload/portfolio/4.png" alt=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/1.png" data-fancybox="portfolio"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/2.png" data-fancybox="portfolio"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/3.png" data-fancybox="portfolio"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/4.png" data-fancybox="portfolio"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/1.png" data-fancybox="portfolio"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/2.png" data-fancybox="portfolio"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/3.png" data-fancybox="portfolio"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+							<div class="portfolio__item"><a href="upload/portfolio/4.png" data-fancybox="portfolio"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
 						</div>
+						<!-- `Пагинация` -->
 						<div class="portfolio__pagination pagination">
 							<ul>
 								<li class="prev"><a href=""></a></li>
@@ -1307,8 +1366,12 @@
 								<li class="next"><a href=""></a></li>
 							</ul>
 						</div>
+						<!-- Конец `Пагинация` -->
 					</div>
-					<div class="reviews"> <!-- Отзывы -->
+					<!-- Конец `Наши работы` -->
+
+					<!-- `Отзывы` -->
+					<div class="reviews">
 						<div class="reviews__control row">
 							<div class="reviews__write"><a href=""><span class="mdi mdi-comment"></span><span class="text-comment">Написать свой отзыв</span></a></div>
 							<div class="reviews__all">Всего отзывов: 30</div>
@@ -1316,7 +1379,7 @@
 						<div class="reviews__list">
 							<div class="reviews__item">
 								<div class="reviews__head row">
-									<div class="reviews__img"><img src="upload/reviews/1.png" alt=""></div>
+									<div class="reviews__img"><img src="upload/reviews/1.png" alt="" title=""></div>
 									<div class="reviews__data">
 										<div class="reviews__name">Денис Пупкин</div>
 										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1331,7 +1394,7 @@
 							</div>
 							<div class="reviews__item">
 								<div class="reviews__head row">
-									<div class="reviews__img"><img src="upload/reviews/0.png" alt=""></div>
+									<div class="reviews__img"><img src="upload/reviews/0.png" alt="" title=""></div>
 									<div class="reviews__data">
 										<div class="reviews__name">Денис Пупкин</div>
 										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1348,7 +1411,7 @@
 							</div>
 							<div class="reviews__item">
 								<div class="reviews__head row">
-									<div class="reviews__img"><img src="upload/reviews/2.png" alt=""></div>
+									<div class="reviews__img"><img src="upload/reviews/2.png" alt="" title=""></div>
 									<div class="reviews__data">
 										<div class="reviews__name">Денис Пупкин</div>
 										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1363,7 +1426,7 @@
 							</div>
 							<div class="reviews__item">
 								<div class="reviews__head row">
-									<div class="reviews__img"><img src="upload/reviews/1.png" alt=""></div>
+									<div class="reviews__img"><img src="upload/reviews/1.png" alt="" title=""></div>
 									<div class="reviews__data">
 										<div class="reviews__name">Денис Пупкин</div>
 										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1378,7 +1441,7 @@
 							</div>
 							<div class="reviews__item">
 								<div class="reviews__head row">
-									<div class="reviews__img"><img src="upload/reviews/0.png" alt=""></div>
+									<div class="reviews__img"><img src="upload/reviews/0.png" alt="" title=""></div>
 									<div class="reviews__data">
 										<div class="reviews__name">Денис Пупкин</div>
 										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1394,6 +1457,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- `Пагинация` -->
 						<div class="reviews__pagination pagination">
 							<ul>
 								<li class="prev"><a href=""></a></li>
@@ -1407,7 +1471,11 @@
 								<li class="next"><a href=""></a></li>
 							</ul>
 						</div>
+						<!-- Конец `Пагинация` -->
 					</div>
+					<!-- Конец `Отзывы` -->
+
+					<!-- `Часто задаваемые вопросы` -->
 					<div class="faq">
 						<div class="faq__list">
 							<div class="faq__item">
@@ -1416,7 +1484,7 @@
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div class="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
@@ -1425,7 +1493,7 @@
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div class="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
@@ -1434,7 +1502,7 @@
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div class="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
@@ -1443,7 +1511,7 @@
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div class="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
@@ -1452,7 +1520,7 @@
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div class="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
@@ -1461,40 +1529,46 @@
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div class="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 						</div>
 						<div class="faq__desc">Не нашли нужный вам ответ? Напишите нам письмо и мысвяжемся с вами в течении нескольких часов проконсультируем по любому вопросу.</div>
 					</div>
-					<div class="gallery"> <!-- Гранит -->
+					<!-- Конец `Часто задаваемые вопросы` -->
+
+					<!-- `Галерея` -->
+					<div class="gallery">
 						<div class="gallery__data data row">
 							<div class="gallery__title title">Фото работ из данного материала</div>
 						</div>
 						<div class="gallery__list gallery__list_4 arrows arrows_brown arrows_middle">
-							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
 						</div>
 						<div class="gallery__list gallery__list_2 arrows arrows_brown arrows_middle">
-							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
-							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
 						</div>
+						<div class="gallery__return return"><a href=""><span class="return-text">Назад</span> <span class="mdi mdi-keyboard-return"></span></a></div> <!-- Гранит -->
 					</div>
-					<div class="gallery__return return"><a href=""><span class="return-text">Назад</span> <span class="mdi mdi-keyboard-return"></span></a></div> <!-- Гранит -->
-				</section>
+					<!-- Конец `Галерея` -->
+				</div>
 			</div>
+
+			<!-- `Шаги` -->
 			<div class="steps">
 				<div class="steps__title title">Схема работы</div>
 				<div class="steps__list row between">
@@ -1532,7 +1606,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="error-page"> <!-- 404 -->
+			<!-- Конец `Шаги` -->
+
+			<!-- `Страница ошибки` -->
+			<div class="error-page">
 				<div class="error-page__count">404</div>
 				<div class="error-page__text">Страница не найдена можете воспользоваться поиском</div>
 				<div class="error-page__search search">
@@ -1540,26 +1617,35 @@
 					<button class="search__btn btn btn_brown"><span class="mdi mdi-magnify"></span></button>
 				</div>
 			</div>
+			<!-- Конец `Страница ошибки` -->
+
+			<!-- `Галерея` -->
 			<div class="gallery">
 				<div class="gallery__data data row i-mid">
 					<div class="gallery__title title">Галерея работ</div>
 					<div class="gallery__link link"><a href="">Посмотреть все фото <span class="mdi mdi-chevron-double-right"></span></a></div>
 				</div>
 				<div class="gallery__list gallery__list_6 arrows arrows_brown arrows_middle">
-					<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
-					<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
-					<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
-					<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
-					<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
-					<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
-					<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
-					<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt="" title=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt="" title=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt="" title=""></a></div>
+					<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt="" title=""></a></div>
 				</div>
 			</div>
+			<!-- Конец `Галерея` -->
+
+			<!-- `Текстовый блок` -->
 			<div class="text-bottom text">
 				<h2>Изготовление памятников,надгробий, мемориальных <br>комплексов на могилу из гранита, из мрамора, с установкой в Москве</h2>
 				<p>Простившись навечно с родным человеком, люди хотят сохранить память о нем надолго. Проявляя свою благодарность усопшему, оказывая ему последние почести, родные облагораживают последнюю пристань покойного: устанавливают ограды, памятники, высаживают цветы. <br>С помощью нашей гранитной мастерской вы сможете отдать последнюю дань уважения дорогому человеку. Мы поможем подобрать материал для надгробия, предложим его дизайн. Опытные специалисты выполнят заказ в краткие сроки и с высоким качеством. <br>Чтобы могила близкого человека всегда выглядела ухоженно, а надгробие простояло века, важно правильно выбрать, из какого материала изготовить памятник. <br>Гранит – самое лучшее решение, его твердость усложняет обработку, зато гарантирует долговечность. На прочном камне надолго сохранятся неизменными даже мелкие детали. Ему не страшны и перепады температур, и влага атмосферных осадков, и ветер. <br>Природные скальные породы (гранит, мрамор, габбро) более стойкие к воздействию времени. Если же нужен более бюджетный вариант, то можно подобрать памятник из искусственного камня. <br>Цены на памятники зависят не только от материала, из которого они изготавливаются. На них влияют сложность формы, вид оформления, наличие и сложность гравировки и т.д.</p>
 			</div>
+			<!-- Конец `Текстовый блок` -->
+
+			<!-- `Прочее` -->
 			<div class="other">
 				<div class="other__title title"></div>
 				<div class="other__list">
@@ -1584,6 +1670,9 @@
 					</div>
 				</div>
 			</div>
+			<!-- Конец `Прочее` -->
+
+			<!-- `Отзывы` -->
 			<div class="reviews">
 				<div class="reviews__data data row i-mid">
 					<div class="reviews__title title">Отзывы наших клиентов</div>
@@ -1592,7 +1681,7 @@
 				<div class="reviews__list reviews__list_line">
 					<div class="reviews__item">
 						<div class="reviews__head row">
-							<div class="reviews__img"><img src="upload/reviews/1.png" alt=""></div>
+							<div class="reviews__img"><img src="upload/reviews/1.png" alt="" title=""></div>
 							<div class="reviews__data">
 								<div class="reviews__name">Денис Пупкин</div>
 								<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1609,7 +1698,7 @@
 					</div>
 					<div class="reviews__item">
 						<div class="reviews__head row">
-							<div class="reviews__img"><img src="upload/reviews/0.png" alt=""></div>
+							<div class="reviews__img"><img src="upload/reviews/0.png" alt="" title=""></div>
 							<div class="reviews__data">
 								<div class="reviews__name">Денис Пупкин</div>
 								<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1626,7 +1715,7 @@
 					</div>
 					<div class="reviews__item">
 						<div class="reviews__head row">
-							<div class="reviews__img"><img src="upload/reviews/2.png" alt=""></div>
+							<div class="reviews__img"><img src="upload/reviews/2.png" alt="" title=""></div>
 							<div class="reviews__data">
 								<div class="reviews__name">Денис Пупкин</div>
 								<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
@@ -1643,7 +1732,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="news"> <!-- Новости -->
+			<!-- Конец `Отзывы` -->
+
+
+			<!-- `Новости` -->
+			<div class="news">
 				<div class="news__sort row">
 					<select class="news__select select" data-placeholder="Все посты">
 						<option>Название 1</option>
@@ -1673,10 +1766,10 @@
 				</div>
 				<div class="news__list">
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/1.png" data-fancybox><img src="upload/articles/1.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/1.png" data-fancybox><img src="upload/articles/1.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1693,10 +1786,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/2.png" data-fancybox><img src="upload/articles/2.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/2.png" data-fancybox><img src="upload/articles/2.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1713,10 +1806,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/3.png" data-fancybox><img src="upload/articles/3.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/3.png" data-fancybox><img src="upload/articles/3.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1733,10 +1826,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/4.png" data-fancybox><img src="upload/articles/4.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/4.png" data-fancybox><img src="upload/articles/4.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1753,10 +1846,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/5.png" data-fancybox><img src="upload/articles/5.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/5.png" data-fancybox><img src="upload/articles/5.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1773,10 +1866,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/6.png" data-fancybox><img src="upload/articles/6.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/6.png" data-fancybox><img src="upload/articles/6.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1793,10 +1886,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/7.png" data-fancybox><img src="upload/articles/7.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/7.png" data-fancybox><img src="upload/articles/7.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1813,10 +1906,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/8.png" data-fancybox><img src="upload/articles/8.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/8.png" data-fancybox><img src="upload/articles/8.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1833,10 +1926,10 @@
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href="upload/articles/1.png" data-fancybox><img src="upload/articles/1.png" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/1.png" data-fancybox><img src="upload/articles/1.png" alt="" title=""></a></div>
 						<div class="news__content">
 							<div class="news__head row i-mid">
-								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__post"><img src="upload/logo.png" alt="" title=""><span>Memorial Vip</span></div>
 								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
@@ -1854,10 +1947,15 @@
 					</div>
 				</div>
 			</div>
+			<!-- Конец `Новости` -->
+
+			<!-- `Помощь людям` -->
 			<div class="help">Помощь людям, это призвание нашей работы: <span class="mdi mdi-comment-text"></span> <a href="mailto:">Напишите письмо</a> или <span class="mdi mdi-phone-classic"></span> <a href="">Закажите звонок</a></div>
+			<!-- Конец `Помощь людям` -->
 		</main>
+		<!-- Конец `Контент страницы` -->
 
-
+		<!-- `Подвал` -->
 		<footer class="footer">
 			<div class="footer__shades">
 				<div class="footer__lamp">
@@ -1931,64 +2029,151 @@
 				</div>
 			</div>
 		</footer>
-	</div>
-	<div class="popup popup_small" id="popup-callback">
-		<div class="popup__close"><span class="mdi mdi-close"></span></div>
-		<div class="popup__title">Заказать звонок</div>
-		<div class="popup__wrap">
-      <div class="popup__input input">
-        <label for="" class="input__text">Ваше имя <span class="color-red">*</span></label>
-        <input type="text" class="input__wrap">
-        <div class="input__error error">Заполните поле</div>
-      </div>
-      <div class="popup__input input input_phone">
-        <label for="" class="input__text">Телефон <span class="color-red">*</span></label>
-        <input type="text" class="input__wrap">
-        <div class="input__error error">Заполните поле</div>
-      </div>
-      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
-      <button class="popup__btn btn btn_img-bg">Отправить</button>
-      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+		<!-- Конец `Подвал` -->
+
+		<!-- `ДИЗ::Колонки` -->
+		<div class="column">
+			<div class="column__item column__item_left">
+				<div class="column__top"></div>
+				<div class="column__mid"></div>
+				<div class="column__foot"></div>
+			</div>
+			<div class="column__item column__item_right">
+				<div class="column__top"></div>
+				<div class="column__mid"></div>
+				<div class="column__foot"></div>
+			</div>
 		</div>
+		<!-- Конец `ДИЗ::Колонки` -->
 	</div>
-	<div class="popup popup_small" id="popup-order">
-		<div class="popup__close"><span class="mdi mdi-close"></span></div>
-		<div class="popup__title">Вызов замерщика</div>
-		<div class="popup__wrap">
-      <div class="popup__input input">
-        <label for="" class="input__text">Ваше имя <span class="color-red">*</span></label>
-        <input type="text" class="input__wrap">
-        <div class="input__error error">Заполните поле</div>
-      </div>
-      <div class="popup__input input input_phone">
-        <label for="" class="input__text">Телефон <span class="color-red">*</span></label>
-        <input type="text" class="input__wrap">
-        <div class="input__error error">Заполните поле</div>
-      </div>
-      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
-      <button class="popup__btn btn btn_img-bg">Отправить</button>
-      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+	<!-- `Попап окна` -->
+	<div class="popups">
+		<!-- `Попап: обратный звонок` -->
+		<div class="popup popup_small" id="popup-callback">
+			<div class="popup__close" data-fancybox-close><span class="mdi mdi-close"></span></div>
+			<div class="popup__title">Заказать звонок</div>
+			<div class="popup__wrap">
+	      <div class="popup__input input">
+	        <label class="input__text">Ваше имя <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__input input input_phone">
+	        <label class="input__text">Телефон <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+	      <button class="popup__btn btn btn_img-bg">Отправить</button>
+	      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+			</div>
 		</div>
-	</div>
-	<div class="popup popup_small" id="popup-message">
-		<div class="popup__close"><span class="mdi mdi-close"></span></div>
-		<div class="popup__title">Написать письмо</div>
-		<div class="popup__wrap">
-      <div class="popup__input input">
-        <label for="" class="input__text">Ваша почта <span class="color-red">*</span></label>
-        <input type="text" class="input__wrap">
-        <div class="input__error error">Заполните поле</div>
-      </div>
-      <div class="popup__textarea textarea">
-        <label for="" class="textarea__text">Сообщение <span class="color-red">*</span></label>
-        <textarea class="textarea__wrap"></textarea>
-        <div class="textarea__error error">Заполните поле</div>
-      </div>
-      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
-      <button class="popup__btn btn btn_img-bg">Отправить</button>
-      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+		<!-- Конец `Попап: обратный звонок` -->
+
+		<!-- `Попап: вызов замерщика` -->
+		<div class="popup popup_small" id="popup-order">
+			<div class="popup__close" data-fancybox-close><span class="mdi mdi-close"></span></div>
+			<div class="popup__title">Вызов замерщика</div>
+			<div class="popup__wrap">
+	      <div class="popup__input input">
+	        <label class="input__text">Ваше имя <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__input input input_phone">
+	        <label class="input__text">Телефон <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+	      <button class="popup__btn btn btn_img-bg">Отправить</button>
+	      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+			</div>
 		</div>
+		<!-- Конец `Попап: вызов замерщика` -->
+
+		<!-- `Попап: написать письмо` -->
+		<div class="popup popup_small" id="popup-message">
+			<div class="popup__close" data-fancybox-close><span class="mdi mdi-close"></span></div>
+			<div class="popup__title">Написать письмо</div>
+			<div class="popup__wrap">
+	      <div class="popup__input input">
+	        <label class="input__text">Ваша почта <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__textarea textarea">
+	        <label class="textarea__text">Сообщение <span class="color-red">*</span></label>
+	        <textarea class="textarea__wrap"></textarea>
+	        <div class="textarea__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+	      <button class="popup__btn btn btn_img-bg">Отправить</button>
+	      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+			</div>
+		</div>
+		<!-- Конец `Попап: написать письмо` -->
+
+		<!-- `Попап: откликнуться на вакансию` -->
+		<div class="popup popup_small" id="popup-job">
+			<div class="popup__close" data-fancybox-close><span class="mdi mdi-close"></span></div>
+			<div class="popup__title">Написать письмо</div>
+			<div class="popup__wrap">
+				<div class="popup__input input">
+	        <label class="input__text">Ваше имя <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__input input">
+	        <label class="input__text">Ваша почта <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__textarea textarea">
+	        <label class="textarea__text">Сообщение</label>
+	        <textarea class="textarea__wrap"></textarea>
+	        <div class="textarea__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__hidden hidden-input"><input type="hidden" name="job-title"></div>
+	      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+	      <button class="popup__btn btn btn_img-bg">Отправить</button>
+	      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+			</div>
+		</div>
+		<!-- Конец `Попап: откликнуться на вакансию` -->
+
+		<!-- `Попап: откликнуться на вакансию` -->
+		<div class="popup popup_small" id="popup-job">
+			<div class="popup__close" data-fancybox-close><span class="mdi mdi-close"></span></div>
+			<div class="popup__title">Откликнуться на вакансию</div>
+			<div class="popup__wrap">
+	      <div class="popup__input input">
+	        <label class="input__text">Ваша почта <span class="color-red">*</span></label>
+	        <input type="text" class="input__wrap">
+	        <div class="input__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__textarea textarea">
+	        <label class="textarea__text">Сообщение <span class="color-red">*</span></label>
+	        <textarea class="textarea__wrap"></textarea>
+	        <div class="textarea__error error">Заполните поле</div>
+	      </div>
+	      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+	      <button class="popup__btn btn btn_img-bg">Отправить</button>
+	      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+			</div>
+		</div>
+		<!-- Конец `Попап: откликнуться на вакансию` -->
+
 	</div>
+	<!-- Конец `Попап окна` -->
 </div>
+
+<!-- `Подключение скриптов и стилей` -->
+<link rel="stylesheet" href="template/styles/css/style.css?ver=02" />
+<link rel="stylesheet" href="template/styles/css/responsive.css?ver=02" />
+<script src="template/scripts/libs.js?ver=02"></script>
+<script src="template/scripts/common.js?ver=02"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Конец `Подключение скриптов и стилей` -->
 </body>
 </html>

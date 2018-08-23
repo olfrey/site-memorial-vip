@@ -287,6 +287,8 @@ input, textarea, button {
     font-family: "Roboto", sans-serif;
     background: url("../../img/monogram-small-left.png") no-repeat left center, url("../../img/monogram-small-right.png") no-repeat right center, #fff;
     border: 1px solid #bfbfbf; }
+    .btn_img-bg:hover {
+      background-position: left -30px center, right -30px center; }
   .btn_black {
     color: #fff;
     border: 2px solid #bfbfbf;
@@ -578,7 +580,7 @@ input, .btn, .slick-slide, textarea {
     .nav__home a .mdi {
       font-size: 15px;
       position: relative;
-      left: 1px; }
+      left: 0.5px; }
   .nav__list {
     width: -webkit-calc(100% - 20px - 100px);
     width: calc(100% - 20px - 100px); }
@@ -644,6 +646,8 @@ input, .btn, .slick-slide, textarea {
         background-color: #ebebeb; }
     .nav__control .count, .nav__control .mdi {
       color: #531010; }
+    .nav__control .count {
+      font-family: "Roboto Slab", serif; }
   .nav__sub-nav {
     z-index: 4;
     opacity: 0;
@@ -1024,6 +1028,13 @@ input, .btn, .slick-slide, textarea {
     color: #531010;
     -webkit-border-radius: 50%;
             border-radius: 50%; }
+    .item__control-item .mdi {
+      -webkit-transition: .3s;
+      transition: .3s; }
+    .item__control-item:hover .mdi {
+      -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+              transform: scale(0.8); }
     .item__control-item:nth-of-type(1) {
       left: 5px; }
     .item__control-item:nth-of-type(2) {
@@ -2001,9 +2012,9 @@ input, .btn, .slick-slide, textarea {
   margin-right: 7px; }
   .filter-tabs li.selected a {
     cursor: default;
-    background-color: #e8e8e8 !important; }
+    background-color: #e8e8e8; }
   .filter-tabs li:hover a {
-    background-color: #e3c3bd; }
+    background-color: #e8e8e8; }
 
 .filter-tabs a {
   display: -webkit-box;
@@ -2247,7 +2258,7 @@ input, .btn, .slick-slide, textarea {
 
 .reviews__item {
   margin-bottom: 35px;
-  height: 190px; }
+  height: auto; }
 
 .reviews__img {
   width: 100px;
@@ -2827,7 +2838,6 @@ input, .btn, .slick-slide, textarea {
     padding-bottom: 11px; }
 
 .popup {
-  display: none;
   position: relative;
   padding: 34px 60px 27px;
   background-color: #fff;
@@ -2864,6 +2874,8 @@ input, .btn, .slick-slide, textarea {
     font-size: 14px;
     text-align: center;
     font-family: "Roboto", sans-serif; }
+  .popup .fancybox-close-small {
+    display: none; }
 
 .color-red {
   color: #f00; }

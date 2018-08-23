@@ -137,6 +137,8 @@ input, textarea, button
 		font-family: $font-family-2
 		background: url('../../img/monogram-small-left.png') no-repeat left center, url('../../img/monogram-small-right.png') no-repeat right center, #fff
 		border: 1px solid #bfbfbf
+		&:hover
+			background-position: left -30px center, right -30px center 
 	&_black
 		color: #fff
 		border: 2px solid #bfbfbf
@@ -446,7 +448,7 @@ input, .btn, .slick-slide, textarea
 			.mdi
 				font-size: 15px
 				position: relative
-				left: 1px
+				left: 0.5px
 		
 	
 
@@ -513,6 +515,9 @@ input, .btn, .slick-slide, textarea
 
 		.count, .mdi
 			color: #531010
+
+		.count
+			font-family: $font-family-1
 
 
 	&__sub-nav
@@ -902,6 +907,12 @@ input, .btn, .slick-slide, textarea
 			font-size: 18px
 			color: #531010
 			border-radius: 50%
+			.mdi
+				transition: .3s
+			&:hover
+				.mdi
+					transform: scale(.8)
+
 			&:nth-of-type(1)
 				left: 5px
 
@@ -1828,10 +1839,10 @@ input, .btn, .slick-slide, textarea
 		&.selected
 			a
 				cursor: default
-				background-color: #e8e8e8 !important
+				background-color: #e8e8e8
 		&:hover
 			a
-				background-color: #e3c3bd
+				background-color: #e8e8e8
 
 	a
 		display: flex
@@ -2050,7 +2061,7 @@ input, .btn, .slick-slide, textarea
 
 	&__item
 		margin-bottom: 35px
-		height: 190px
+		height: auto
 
 	&__img
 		width: 100px
@@ -2645,7 +2656,7 @@ input, .btn, .slick-slide, textarea
 		
 		
 .popup
-	display: none
+	// display: none
 	position: relative
 	padding: 34px 60px 27px
 	background-color: #fff
@@ -2687,6 +2698,8 @@ input, .btn, .slick-slide, textarea
 		text-align: center
 		font-family: $font-family-2
 		
+	.fancybox-close-small
+		display: none
 		
 
 
