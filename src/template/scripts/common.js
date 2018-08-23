@@ -79,14 +79,19 @@ $(document).ready(function($) {
 		}
 	});
 
-	$('.shares__item').each(function(index, el) {
-		var sharesTextP = $(this).find('.shares__text p'),
-				sharesToggle = $(this).find('.shares__toggle');
+	function hiddenToggleBtn(element, nameBlock) {
+		element.each(function(index, el) {
+			var textP = $(this).find('.'+nameBlock+'__text p'),
+					toggle = $(this).find('.'+nameBlock+'__toggle');
 
-		if(sharesTextP.length < 2) {
-			sharesToggle.hide();
-		}
-	});
+			if(textP.length < 2) {
+				toggle.hide();
+			}
+		});
+	}
+
+	hiddenToggleBtn($('.shares__item'), 'shares');
+	hiddenToggleBtn($('.reviews__item'), 'reviews');
 
 	function toggleBlock(element, nameBlock) {
 		var item = element.parents('.'+nameBlock+'__item'),
@@ -104,8 +109,6 @@ $(document).ready(function($) {
 	$('.reviews__toggle span').click(function(event) {
 		toggleBlock($(this), 'reviews');
 	});
-
-
 
 
 	var comparisonList = $('.comparison__list .nano-content'),
@@ -131,6 +134,13 @@ $(document).ready(function($) {
 		jobsBody.slideToggle(300);
 	}
 
+
+	$('.search__btn-show').on('click', function(event) {
+		var search = $(this).parents('.search');
+		search.addClass('search_show');
+	});
+
+
 	$('.jobs__head').on('click', function() {
 		toggleItem($(this), 'jobs');
 	});
@@ -142,6 +152,10 @@ $(document).ready(function($) {
 
 	$('.certificates__list').slick({
 		slidesToShow: 2
+	})
+
+	$('.gallery__list_2').slick({
+		slidesToShow: 2,
 	})
 
 	$('.gallery__list_4').slick({

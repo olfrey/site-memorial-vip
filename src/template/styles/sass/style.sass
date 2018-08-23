@@ -28,8 +28,8 @@ body
 	font-family: $font-family-1
 	color: $color-1
 	background: white
-
-
+	background: url('../../img/bg.png')
+	
 
 ul
 	display: flex
@@ -110,6 +110,13 @@ input, textarea, button
 		padding-left: 3px
 		padding-right: 5px
 
+
+.error
+	color: #f00
+	font-size: 14px
+	font-family: $font-family-2
+	margin-top: 2px
+	display: none
 .btn
 	position: relative
 	display: flex
@@ -127,8 +134,17 @@ input, textarea, button
 		height: 50px
 		padding-left: 32px
 		padding-right: 32px
+		font-family: $font-family-2
 		background: url('../../img/monogram-small-left.png') no-repeat left center, url('../../img/monogram-small-right.png') no-repeat right center, #fff
 		border: 1px solid #bfbfbf
+	&_black
+		color: #fff
+		border: 2px solid #bfbfbf
+		background-color: #232323
+		&:hover
+			color: #232323
+			border-color: #232323
+			background-color: #fff
 
 
 .input input, .textarea textarea
@@ -157,10 +173,68 @@ input, .btn, .slick-slide, textarea
 	color: #531010
 
 
+.wrap
+	position: relative
 
 .main-wrap
 	// overflow-x: hidden
-	background: url('../../img/bg.png')
+	max-width: 1905px
+	margin-left: auto
+	margin-right: auto
+
+.case
+	position: relative
+	z-index: 2
+
+.column
+	z-index: 1
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	&__item
+		position: absolute
+		top: 0
+		height: calc(100% - 233px)
+		width: 71px
+		&_left
+			left: 0
+			*
+				background-position: right 0
+		&_right
+			right: 0
+			*
+				background-position: left 0
+
+	&__top, &__mid, &__foot
+		width: 71px
+		left: 0
+		right: 0
+		
+		
+	&__top
+		height: 77px
+		top: 0
+		background-image: url('../../img/col-top.png')
+		background-repeat: no-repeat
+
+	&__mid
+		top: 77px
+		bottom: 87px
+		height: 100%
+		background-image: url('../../img/col-mid.png')
+
+	&__foot
+		bottom: 0
+		height: 87px
+		background-image: url('../../img/col-foot.png')
+		background-repeat: no-repeat
+		
+
+		
+
+		
 
 
 .panel
@@ -246,7 +320,10 @@ input, .btn, .slick-slide, textarea
 
 	&__nav
 		display: none
-
+	&__list
+		span
+			display: block
+		
 	&__wrap
 		position: absolute
 		width: 640px
@@ -307,6 +384,8 @@ input, .btn, .slick-slide, textarea
 	font-family: $font-family-2
 	border-bottom: 2px solid #bfbfbf
 	background-color: #fff
+	.case
+		z-index: 3
 	ul
 		justify-content: space-between
 		ul
@@ -613,7 +692,37 @@ input, .btn, .slick-slide, textarea
 		.mdi
 			color: #fff
 			font-size: 26px
+	&_small
+		width: 52px
+		transition: .3s
+		.search
+			&__input
+				height: 52px
+				padding-left: 0
+				padding-right: 0
+			&__btn
+				height: 46px
+				opacity: 0
+				&.search__btn-show
+					opacity: 1
+					width: auto
+					left: 3px
+					right: 3px
+					z-index: 2
+	&_show
+		width: 225px
+		.search
+			&__input
 
+			&__btn
+				z-index: 2
+				opacity: 1 !important
+				&.search__btn-show
+					opacity: 0
+					z-index: -2
+				
+				
+				
 		
 			
 .nav-block
@@ -774,6 +883,11 @@ input, .btn, .slick-slide, textarea
 .item
 	position: relative
 	display: block
+	&_hidden-nav
+		.item
+			&__control
+				// display: none
+				
 	&__control
 		&-item
 			display: flex
@@ -1925,6 +2039,8 @@ input, .btn, .slick-slide, textarea
 		&_line
 			display: flex
 			flex-wrap: wrap
+			margin-left: -13px
+			margin-right: -13px
 			.reviews
 				&__item
 					width: calc(33.333% - 26px)
@@ -2183,11 +2299,401 @@ input, .btn, .slick-slide, textarea
 
 
 
+.news
+	&__sort
+		margin-left: -7px
+		margin-right: -7px
+		padding-bottom: 6px
+	&__select
+		width: calc(239px - 14px)
+		margin-left: 7px
+		margin-right: 7px
+		margin-bottom: 18px
+
+	&__search
+		margin-left: auto
+		
+	&__list
+		display: block
+		margin-left: -3px
+		margin-right: -3px
+		column-width: calc(33% - 22px)
+		column-count: 3
+	&__item
+		display: inline-block
+		margin-left: 3px
+		margin-right: 3px
+		border: 1px solid #e3c3bd
+		background-color: #ffffff
+		margin-bottom: 22px
+	&__img
+		a
+			position: relative
+			display: block
+			&:hover
+				&:before
+					transform: translate(-50%, -50%) scale(1)
+				&:after
+					opacity: 1
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				left: 50%
+				z-index: 2
+				transform: translate(-50%, -50%) scale(.0)
+				width: 81px
+				height: 80px
+				background: url('../../img/magnifi.png') no-repeat center
+				transition: .3s
+			&:after
+				z-index: 1
+				opacity: 0
+				content: ''
+				position: absolute
+				display: block
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				opacity: 0
+				background-color: rgba(83,16,16,.5)
+				transition: .3s
+		
+	&__post
+		display: flex
+		img
+			width: 30px
+			height: 30px
+			position: relative
+			top: -2px
+		span
+			font-size: 18px
+			font-weight: 700
+			margin-left: 10px
+			color: #531010
+
+	&__data
+		font-weight: 300
+		color: #131313
+		font-family: $font-family-2
+		margin-left: auto
+		font-size: 14px
+		.dot
+			display: inline-block
+			vertical-align: middle
+			background-color: $color-1
+			width: 7px
+			height: 7px
+			border-radius: 50%
+			position: relative
+			top: -1px
+		
+
+		
+	&__content
+		padding: 15px 13px 8px
+
+	&__head
+		margin-bottom: 20px
+
+	&__title
+		font-size: 20px
+		font-weight: 700
+		margin-bottom: 5px
+
+	&__text
+		font-size: 16px
+		font-family: $font-family-2
+		&-preview, &-link
+			display: inline
+		&-link
+			a
+				display: inline
+				color: #531010
+				&:hover
+					border-color: #531010
+
+
+		
+		
+		
+	&__body
+		padding-bottom: 30px
+		border-bottom: 1px solid #ebebeb
+		
+	&__foot
+		padding-top: 8px
+	
+	&__views
+		font-size: 14px
+		color: #7d7d7d
+		font-family: $font-family-2
+
+	&__link
+		position: relative
+		top: 1px
+		margin-left: auto
+		a
+			opacity: .4
+			display: block
+			width: 23px
+			height: 23px
+			background: url('../../img/read.png') no-repeat center
+			&:hover
+				opacity: 1
+		
+
+.help
+	background-color: #fff
+	color: #531010
+	font-weight: 700
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	height: 50px
+	padding: 0 50px
+	position: relative
+	&:before, &:after
+		top: 0
+		bottom: 0
+		position: absolute
+		content: ""
+		display: inline-block
+		width: 0
+		height: 0
+		border-style: solid
+	&:before
+		left: 0
+		border-width: 50px 45px 0 0
+		border-color: #e3c3bd transparent transparent transparent
+
+	&:after
+		right: 0
+		border-width: 0 45px 50px 0
+		border-color: transparent #e3c3bd transparent transparent
+
+	.mdi, a
+		margin-left: 6px
+		margin-right: 6px
+		position: relative
+		top: 2px
+
+	.mdi
+		+ a
+			margin-left: 0
+
+
+
+	a
+		font-weight: 400
+		color: $color-1
+		border-color: $color-1
+		&:hover
+			border-color: transparent
+		
 
 
 
 
+.footer
+	background: url('../../img/footer.png') no-repeat center 7px, url('../../img/steps.png') no-repeat center 429px
+	position: relative
+	padding-top: 60px
+	&:before
+		content: ''
+		left: 0
+		right: 0
+		position: absolute
+		height: 7px
+		background: url('../../img/pattern-top.png') repeat-x center top
+		top: 0
+	&__shades
+		position: relative
+		&:before, &:after
+			content: ''
+			top: -53px
+			position: absolute
+			width: 167px
+			height: 429px
+			background-position: center
+			background-repeat: no-repeat
+		&:before
+			background-image: url('../../img/shtorka-left.png')
+			left: 37px
 
+		&:after
+			background-image: url('../../img/shtorka-right.png')
+			right: 37px
+	&__lamp
+		&:before, &:after
+			content: ''
+			bottom: 72px
+			position: absolute
+			width: 68px
+			height: 160px
+			background-position: center
+			background-repeat: no-repeat
+			background-image: url('../../img/lamp.png')
+		&:before
+			left: 120px
+
+		&:after
+			right: 120px
+		
+	&__body
+		position: relative
+		color: #fff
+		font-family: $font-family-2
+		font-size: 17px
+		a
+			color: #fff
+
+	&__wrap
+		margin-left: -10px
+		margin-right: -10px
+	
+
+	&__col
+		width: 25%
+		padding-left: 10px
+		padding-right: 10px
+		&:last-of-type
+			padding-left: 40px
+		
+	&__title
+		font-size: 24px
+		color: #eccab2
+		font-family: $font-family-1
+		margin-bottom: 30px
+
+	&__nav
+		li
+			position: relative
+			width: 100%
+			padding-left: 8px
+			margin-bottom: 5px
+			&:last-of-type
+				margin-bottom: 0
+			&:before
+				content: '-'
+				position: absolute
+				top: 0
+				left: 0
+		a
+			&:hover
+				border-color: #fff
+
+	&__time
+		margin-bottom: 20px
+		
+	&__address
+		margin-bottom: 32px
+		max-width: 270px
+
+	&__contacts
+		p
+			margin-bottom: 7px
+
+		a
+			border-bottom: none
+		
+		
+	&__data
+		margin-top: 72px
+	&__btn
+		width: 230px
+		height: 50px
+
+	&__links
+		margin-left: 16px
+		margin-right: 16px
+		li
+			margin-left: 7px
+			margin-right: 7px
+		a
+			display: block
+			border: 2px solid #b1b1b1
+			background-color: #232323
+			color: #fff
+			width: 49px
+			height: 49px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 29px
+			border-radius: 50%
+			&:hover
+				color: #232323
+				border-color: #232323
+				background-color: #fff
+	
+	&__copy
+		max-width: 1165px
+		font-size: 16px
+		margin-top: 18px
+		font-size: 14px
+		font-family: $font-family-2
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		padding-bottom: 11px
+		
+		
+		
+		
+.popup
+	display: none
+	position: relative
+	padding: 34px 60px 27px
+	background-color: #fff
+	font-family: $font-family-2
+	&_small
+		width: 420px
+	&__close
+		position: absolute
+		top: 13px
+		right: 13px
+		font-size: 24px
+		line-height: 18px
+		color: #571818
+		cursor: pointer
+		&:hover
+			color: $color-1
+		
+	&__title
+		font-size: 24px
+		text-align: center
+		font-weight: 700
+		color: #571818
+		margin-bottom: 40px
+		font-family: $font-family-1
+
+	&__input, &__textarea, &__captcha
+		margin-bottom: 30px
+
+	&__btn
+		font-size: 20px
+		width: 100%
+
+	&__policy
+		margin-top: 23px
+		max-width: 265px
+		margin-left: auto
+		margin-right: auto
+		font-size: 14px
+		text-align: center
+		font-family: $font-family-2
+		
+		
+
+
+
+
+.color-red
+	color: #f00
 
 .fancybox-thumbs > ul
 	display: block

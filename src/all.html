@@ -41,9 +41,9 @@
 					</div>
 					<div class="panel__links">
 						<u>
-							<li><u><span class="mdi mdi-phone-classic"></span></u><a href="">Заказать звонок</a></li>
-							<li><u><span class="mdi mdi-account"></span></u><a href="">Вызвать замерщика</a></li>
-							<li><u><span class="mdi mdi-message-text"></span></u><a href="">Написать письмо</a></li>
+							<li><u><span class="mdi mdi-phone-classic"></span></u><a data-fancybox data-src="#popup-callback" href="javascript:;">Заказать звонок</a></li>
+							<li><u><span class="mdi mdi-account"></span></u><a data-fancybox data-src="#popup-order" href="javascript:;">Вызвать замерщика</a></li>
+							<li><u><span class="mdi mdi-message-text"></span></u><a data-fancybox data-src="#popup-message" href="javascript:;">Написать письмо</a></li>
 						</u>
 					</div>
 				</div>
@@ -52,22 +52,22 @@
 		<div class="slider">
 			<ul class="slider__list arrows arrows_white arrows_middle">
 				<li>
-					<div class="slider__wrap">
-						<div class="slider__title">Лучшие памятники в России можно заказать у нас</div>
-						<div class="slider__desc">И памятник простоит столетия, напоминая потомкам о предке</div>
-					</div>
+					<span class="slider__wrap">
+						<span class="slider__title">Лучшие памятники в России можно заказать у нас</span>
+						<span class="slider__desc">И памятник простоит столетия, напоминая потомкам о предке</span>
+					</span>
 				</li>
 				<li>
-					<div class="slider__wrap">
-						<div class="slider__title">Лучшие памятники в России можно заказать у нас</div>
-						<div class="slider__desc">И памятник простоит столетия, напоминая потомкам о предке</div>
-					</div>
+					<span class="slider__wrap">
+						<span class="slider__title">Лучшие памятники в России можно заказать у нас</span>
+						<span class="slider__desc">И памятник простоит столетия, напоминая потомкам о предке</span>
+					</span>
 				</li>
 				<li>
-					<div class="slider__wrap">
-						<div class="slider__title">Лучшие памятники в России можно заказать у нас</div>
-						<div class="slider__desc">И памятник простоит столетия, напоминая потомкам о предке</div>
-					</div>
+					<span class="slider__wrap">
+						<span class="slider__title">Лучшие памятники в России можно заказать у нас</span>
+						<span class="slider__desc">И памятник простоит столетия, напоминая потомкам о предке</span>
+					</span>
 				</li>
 			</ul>
 			<div class="slider__nav">
@@ -205,6 +205,18 @@
 	</header>
 
 	<div class="wrap">
+		<div class="column">
+			<div class="column__item column__item_left">
+				<div class="column__top"></div>
+				<div class="column__mid"></div>
+				<div class="column__foot"></div>
+			</div>
+			<div class="column__item column__item_right">
+				<div class="column__top"></div>
+				<div class="column__mid"></div>
+				<div class="column__foot"></div>
+			</div>
+		</div>
 		<main class="main case">
 			<div class="text-top text"> <!-- Главная страница -->
 				<h2>Заказать памятник на могилу</h2>
@@ -227,10 +239,8 @@
 			<div class="cols row i-top">
 				<aside class="aside aside_bg"> <!-- Главная страница -->
 					<div class="aside__search search">
-						<form>
-							<input type="text" class="search__input" placeholder="Поиск по названию">
-							<button class="search__btn btn btn_brown"><span class="mdi mdi-magnify"></span></button>
-						</form>
+						<input type="text" class="search__input" placeholder="Поиск по названию">
+						<button class="search__btn btn btn_brown"><span class="mdi mdi-magnify"></span></button>
 					</div>
 					<div class="nav-block">
 						<div class="nav-block__wrap">
@@ -384,7 +394,7 @@
 						</div>
 						<div class="catalog__list catalog__list_pt row">
 						  <div class="catalog__item">
-						    <div class="item">
+						    <div class="item item_hidden-nav">
 						      <div class="item__control">
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
@@ -394,7 +404,7 @@
 						    </div>
 						  </div>
 						  <div class="catalog__item">
-						    <div class="item">
+						    <div class="item item_hidden-nav">
 									<div class="item__control">
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
@@ -404,7 +414,7 @@
 						    </div>
 						  </div>
 						  <div class="catalog__item">
-						    <div class="item">
+						    <div class="item item_hidden-nav">
 						      <div class="item__control">
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
@@ -414,7 +424,7 @@
 						    </div>
 						  </div>
 						  <div class="catalog__item">
-						    <div class="item">
+						    <div class="item item_hidden-nav">
 						      <div class="item__control">
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
@@ -424,7 +434,7 @@
 						    </div>
 						  </div>
 						  <div class="catalog__item">
-						    <div class="item">
+						    <div class="item item_hidden-nav">
 									<div class="item__control">
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
@@ -434,7 +444,7 @@
 						    </div>
 						  </div>
 						  <div class="catalog__item">
-						    <div class="item">
+						    <div class="item item_hidden-nav">
 						      <div class="item__control">
 						        <a href="" class="item__control-item"><span class="mdi mdi-heart-outline"></span></a>
 										<a href="" class="item__control-item"><span class="mdi mdi-scale-balance"></span></a>
@@ -467,16 +477,19 @@
 					        <div class="form__input input">
 					          <label for="" class="input__text">Ваше имя *</label>
 					          <input type="text" class="input__wrap">
+					          <div class="input__error error">Заполните поле</div>
 					        </div>
 					        <div class="form__input input input_phone">
 					          <label for="" class="input__text">Телефон *</label>
 					          <input type="text" class="input__wrap">
+					          <div class="input__error error">Заполните поле</div>
 					        </div>
 					      </div>
 					      <div class="form__mid">
 					        <div class="form__textarea textarea">
 					          <label for="" class="textarea__text">Сообщение *</label>
 					          <textarea class="textarea__wrap"></textarea>
+					          <div class="textarea__error error">Заполните поле</div>
 					        </div>
 					      </div>
 					      <div class="form__right">
@@ -1295,99 +1308,160 @@
 							</ul>
 						</div>
 					</div>
-					<div class="reviews"> <!-- Отзывsli>
+					<div class="reviews"> <!-- Отзывы -->
+						<div class="reviews__control row">
+							<div class="reviews__write"><a href=""><span class="mdi mdi-comment"></span><span class="text-comment">Написать свой отзыв</span></a></div>
+							<div class="reviews__all">Всего отзывов: 30</div>
+						</div>
+						<div class="reviews__list">
+							<div class="reviews__item">
+								<div class="reviews__head row">
+									<div class="reviews__img"><img src="upload/reviews/1.png" alt=""></div>
+									<div class="reviews__data">
+										<div class="reviews__name">Денис Пупкин</div>
+										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
+									</div>
+								</div>
+								<div class="reviews__body">
+									<div class="reviews__text">
+										<p>Хочу выразить огромную благодарность за помощь изготовление надгробной плиты для мамы. Отдельное спасибо художнику за реставрацию надписи на могиле папы. Замечательно оформлено благоустройство могил из мрамора.</p>
+									</div>
+									<div class="reviews__toggle"><span>Развернуть отзыв</span></div>
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__head row">
+									<div class="reviews__img"><img src="upload/reviews/0.png" alt=""></div>
+									<div class="reviews__data">
+										<div class="reviews__name">Денис Пупкин</div>
+										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
+									</div>
+								</div>
+								<div class="reviews__body">
+									<div class="reviews__text">
+										<p>Хочу выразить огромную благодарность за помощь изготовление надгробной плиты для мамы. Отдельное спасибо художнику за реставрацию надписи на могиле папы. Замечательно оформлено благоустройство могил из мрамора.</p>
+										<p>Заказали памятник по индивидуальному проекту. Команда мемориалвип помогла с проработкой концепции, визуализацией, подбором материалов для памятника. Работу сделали в срок, по проекту и в рамках бюджета. </p>
+										<p>Ребята сделали отличный качественный памятник, за что им большая благодарность. Рисунок на памятнике получился четким, один в один с фотографией. В сроки, оговоренные в договоре, уложились. В общем, не подвели, да вот как-то так.</p>
+									</div>
+									<div class="reviews__toggle"><span>Развернуть отзыв</span></div>
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__head row">
+									<div class="reviews__img"><img src="upload/reviews/2.png" alt=""></div>
+									<div class="reviews__data">
+										<div class="reviews__name">Денис Пупкин</div>
+										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
+									</div>
+								</div>
+								<div class="reviews__body">
+									<div class="reviews__text">
+										<p>Хочу выразить огромную благодарность за помощь изготовление надгробной плиты для мамы. Отдельное спасибо художнику за реставрацию надписи на могиле папы. Замечательно оформлено благоустройство могил из мрамора.</p>
+									</div>
+									<div class="reviews__toggle"><span>Развернуть отзыв</span></div>
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__head row">
+									<div class="reviews__img"><img src="upload/reviews/1.png" alt=""></div>
+									<div class="reviews__data">
+										<div class="reviews__name">Денис Пупкин</div>
+										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
+									</div>
+								</div>
+								<div class="reviews__body">
+									<div class="reviews__text">
+										<p>Хочу выразить огромную благодарность за помощь изготовление надгробной плиты для мамы. Отдельное спасибо художнику за реставрацию надписи на могиле папы. Замечательно оформлено благоустройство могил из мрамора.</p>
+									</div>
+									<div class="reviews__toggle"><span>Развернуть отзыв</span></div>
+								</div>
+							</div>
+							<div class="reviews__item">
+								<div class="reviews__head row">
+									<div class="reviews__img"><img src="upload/reviews/0.png" alt=""></div>
+									<div class="reviews__data">
+										<div class="reviews__name">Денис Пупкин</div>
+										<div class="reviews__desc">Качественный памятник из ударопрочного стекла</div>
+									</div>
+								</div>
+								<div class="reviews__body">
+									<div class="reviews__text">
+										<p>Хочу выразить огромную благодарность за помощь изготовление надгробной плиты для мамы. Отдельное спасибо художнику за реставрацию надписи на могиле папы. Замечательно оформлено благоустройство могил из мрамора.</p>
+										<p>Заказали памятник по индивидуальному проекту. Команда мемориалвип помогла с проработкой концепции, визуализацией, подбором материалов для памятника. Работу сделали в срок, по проекту и в рамках бюджета. </p>
+										<p>Ребята сделали отличный качественный памятник, за что им большая благодарность. Рисунок на памятнике получился четким, один в один с фотографией. В сроки, оговоренные в договоре, уложились. В общем, не подвели, да вот как-то так.</p>
+									</div>
+									<div class="reviews__toggle"><span>Развернуть отзыв</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__pagination pagination">
+							<ul>
+								<li class="prev"><a href=""></a></li>
+								<li><a href="">1</a></li>
+								<li class="selected"><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li class="dots"><a href="">...</a></li>
+								<li><a href="">12</a></li>
+								<li class="next"><a href=""></a></li>
 							</ul>
 						</div>
-				</div>
-				<div class="faq"> <!-- ЧЗВ -->
-						div class="faq__list">
-							<div class="faq_item">
+					</div>
+					<div class="faq">
+						<div class="faq__list">
+							<div class="faq__item">
 								<div class="faq__head">
-								<div class="faq__title">Что важно знать при установке пмятника?<div>
+									<div class="faq__title">Что важно знать при установке памятника?</div>
 									<div class="faq__round round"></div>
 								</div>
-							<div class="faq__body">
+								<div class="faq__body">
 									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
 								<div class="faq__head">
-									<div class="faq__title">Какой тип памятника лучше всего подходит?</div>
+									<div class="faq__title">Что важно знать при установке памятника?</div>
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div class="faq__text">Как выбрать памятник на могилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника.В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращиать цветы, траву) или надгробные плиты (а них часто гравируют эпитафии, стихотворенияили изображения).</div>
-								</div>
-							</div>
-							<div class="faq__item">
-							<div class="faq__head">
-									<di class="faq__title">Какие материалы используют для памятника</div>
-									<div class="faq__round round"></div>
-								</div>
-								<div class="faq__body">
-									<div class="fq__text">Как выбрать памятник на могилу? то дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
 								<div class="faq__head">
-									<div class="faq__title">Как надо ухаживать за могилой?</div>
+									<div class="faq__title">Что важно знать при установке памятника?</div>
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div class="faq__text">Как выбрать памятник на могилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основаня всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) ли надгробные плиты (на них часто гравирют эпитафии, стихотворения или изображения).<div>
-								</div>
-							</div>
-							<div class="faq__item">
-								<div class="aq__head">
-									<div class="faq__title>Что такое гранит?</div>
-									<div class="faq__round roud"></div>
-								</div>
-								<div class="faq__body">
-									<div class="faq__text">Как выбрать памятник на могилу? Эо дело ответственное и подходить к нему нжно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
 								<div class="faq__head">
-									<div class="faq__title">Нужна ли ограда и какая если нужна?</div>
+									<div class="faq__title">Что важно знать при установке памятника?</div>
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div class="faq__text">Как выбрать памятник на могилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки) К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто граируют эпитафии, стихотворения или изобраения).</div>
-								</div>
-							</div>
-						<div class="faq__item">
-								<div class="faq__head">
-									<div class="faq__itle">Этапы сотрудничества?</div>
-								<div class="faq__round round"></div>
-								</div>
-								div class="faq__body">
-									<div class="faq__text">Как выбрать памятник на могилу? Это дело ответственное и подходить  нему нужно основательно. Речь идет об осовании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
 								<div class="faq__head">
-									<div class="faq__title">Надо ли вносить предоплату?</div>
+									<div class="faq__title">Что важно знать при установке памятника?</div>
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div class="faq__text">Как выбрать памятник на могилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можновыращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображния).</div>
-								</div>
-							</div>							<div class="faq__item">
-								<div cass="faq__head">
-									<div class="faq__title">Как быстро проходит сотрудничество?/div>
-									<div class="faq__round roun"></div>
-								</div>
-								<div class="faq__body">
-								<div class="faq__text">Как выбрать памятник на могилу? Это дело ответственное и подходить к нему нужно основательно. Рчь идет об основании для памятника. В качстве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 							<div class="faq__item">
 								<div class="faq__head">
-									<div class="faq__title">Почему мне нужно выбрать именно вас?</div>
+									<div class="faq__title">Что важно знать при установке памятника?</div>
 									<div class="faq__round round"></div>
 								</div>
 								<div class="faq__body">
-									<div class="faq__text">Как выбрать памятник на могилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, раву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
+									<div lss="faq__text">Как выбрать памятник на огилу? Это дело ответственное и подходить к нему нужно основательно. Речь идет об основании для памятника. В качестве основания всегда используют тумбы (подставки). К ним устанавливают цветник (в них можно выращивать цветы, траву) или надгробные плиты (на них часто гравируют эпитафии, стихотворения или изображения).</div>
 								</div>
 							</div>
 						</div>
@@ -1398,6 +1472,16 @@
 							<div class="gallery__title title">Фото работ из данного материала</div>
 						</div>
 						<div class="gallery__list gallery__list_4 arrows arrows_brown arrows_middle">
+							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
+							<div class="gallery__item"><a href="upload/portfolio/4.png" data-fancybox="gallery"><img src="upload/portfolio/4.png" alt=""></a></div>
+						</div>
+						<div class="gallery__list gallery__list_2 arrows arrows_brown arrows_middle">
 							<div class="gallery__item"><a href="upload/portfolio/1.png" data-fancybox="gallery"><img src="upload/portfolio/1.png" alt=""></a></div>
 							<div class="gallery__item"><a href="upload/portfolio/2.png" data-fancybox="gallery"><img src="upload/portfolio/2.png" alt=""></a></div>
 							<div class="gallery__item"><a href="upload/portfolio/3.png" data-fancybox="gallery"><img src="upload/portfolio/3.png" alt=""></a></div>
@@ -1500,7 +1584,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="reviews"> <!-- Отзывы -->
+			<div class="reviews">
 				<div class="reviews__data data row i-mid">
 					<div class="reviews__title title">Отзывы наших клиентов</div>
 					<div class="reviews__link link"><a href="">Показать все отзывы <span class="mdi mdi-chevron-double-right"></span></a></div>
@@ -1560,261 +1644,350 @@
 				</div>
 			</div>
 			<div class="news"> <!-- Новости -->
-				<div class="news__sort">
-					<select class="news__select select">
-						<option></option>
-						<option></option>
-						<option></option>
+				<div class="news__sort row">
+					<select class="news__select select" data-placeholder="Все посты">
+						<option>Название 1</option>
+						<option>Название 2</option>
+						<option>Название 3</option>
 					</select>
-					<select class="news__select select">
-						<option></option>
-						<option></option>
-						<option></option>
+					<select class="news__select select" data-placeholder="За 2018 год">
+						<option>Название 1</option>
+						<option>Название 2</option>
+						<option>Название 3</option>
 					</select>
-					<select class="news__select select">
-						<option></option>
-						<option></option>
-						<option></option>
+					<select class="news__select select" data-placeholder="О памятниках">
+						<option>Название 1</option>
+						<option>Название 2</option>
+						<option>Название 3</option>
 					</select>
-					<select class="news__select select">
-						<option></option>
-						<option></option>
-						<option></option>
+					<select class="news__select select" data-placeholder="По популярности">
+						<option>Название 1</option>
+						<option>Название 2</option>
+						<option>Название 3</option>
 					</select>
-					<div class="news__search search">
-						<form>
-							<input type="text" class="search__input">
-							<button class="search__btn btn btn_brown"><span class="mdi mdi-"></span></button>
-						</form>
+					<div class="news__search search search_small">
+						<div class="search__btn search__btn-show btn btn_brown"><span class="mdi mdi-magnify"></span></div>
+						<input type="text" class="search__input">
+						<button class="search__btn btn btn_brown"><span class="mdi mdi-magnify"></span></button>
 					</div>
 				</div>
-				<div class="news__list row">
+				<div class="news__list">
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/1.png" data-fancybox><img src="upload/articles/1.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Изгибы любят все</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/2.png" data-fancybox><img src="upload/articles/2.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Кресты это не банально</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/3.png" data-fancybox><img src="upload/articles/3.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Все лучшее детям</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/4.png" data-fancybox><img src="upload/articles/4.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">О визуальном стиле и как сделать заголовок в две строки</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/5.png" data-fancybox><img src="upload/articles/5.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Фото на стекле это интересно, ваши потомки скажут вам спасибо</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/6.png" data-fancybox><img src="upload/articles/6.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Эксклюзивные памятники это...</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/7.png" data-fancybox><img src="upload/articles/7.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Особый дизайн</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/8.png" data-fancybox><img src="upload/articles/8.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Строгие формы</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 					<div class="news__item">
-						<div class="news__img"><a href=""><img src="" alt=""></a></div>
+						<div class="news__img"><a href="upload/articles/1.png" data-fancybox><img src="upload/articles/1.png" alt=""></a></div>
 						<div class="news__content">
-							<div class="news__head row">
-								<div class="news__post"><img src="" alt=""><span></span></div>
-								<div class="news__data"></div>
+							<div class="news__head row i-mid">
+								<div class="news__post"><img src="upload/logo.png" alt=""><span>Memorial Vip</span></div>
+								<div class="news__data">4 апр. <span class="dot"></span> 1 мин. чтения</div>
 							</div>
 							<div class="news__body">
-								<div class="news__title"></div>
-								<div class="news__text"></div>
+								<div class="news__title">Изгибы любят все</div>
+								<div class="news__text">
+									<div class="news__text-preview">В гранитной мастерской работают специалисты различного профиля: скульпторы, резчики, граверы, имеющие колоссальный опыт работы с натуральным камнем.</div>
+									<div class="news__text-link"><a href="">[...]</a></div>
+								</div>
 							</div>
-							<div class="news__foot row">
-								<div class="news__views"></div>
-								<div class="news__link"><a href=""><span class="mdi mdi-"></span></a></div>
+							<div class="news__foot row i-mid">
+								<div class="news__views">Просмотров: 34</div>
+								<div class="news__link"><a href=""></a></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="help"></div>
+			<div class="help">Помощь людям, это призвание нашей работы: <span class="mdi mdi-comment-text"></span> <a href="mailto:">Напишите письмо</a> или <span class="mdi mdi-phone-classic"></span> <a href="">Закажите звонок</a></div>
 		</main>
 
 
 		<footer class="footer">
-			<div class="case">
-				<div class="footer__body">
-					<div class="footer__wrap row row-">
-					<div class="footer__col col-lg-3">
-						<div class="footer__title"></div>
-						<div class="footer__nav">
-							<ul>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-							</ul>
+			<div class="footer__shades">
+				<div class="footer__lamp">
+					<div class="case">
+						<div class="footer__body">
+							<div class="footer__wrap row">
+								<div class="footer__col">
+									<div class="footer__title">Популярные разделы</div>
+									<div class="footer__nav">
+										<ul>
+											<li><a href="">Галерея работ</a></li>
+											<li><a href="">Элитные мемориальные комплексы</a></li>
+											<li><a href="">Эксклюзивные памятники</a></li>
+											<li><a href="">Наша выставка</a></li>
+											<li><a href="">Гарантия</a></li>
+											<li><a href="">Скидки/Акции</a></li>
+											<li><a href="">Скульптуры</a></li>
+											<li><a href="">Бюсты</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__col">
+									<div class="footer__title">Услуги</div>
+									<div class="footer__nav">
+										<ul>
+											<li><a href="">3D Моделирование</a></li>
+											<li><a href="">Уход за могилой</a></li>
+											<li><a href="">Благоустройство захоронений</a></li>
+											<li><a href="">Визуальное оформление памятника</a></li>
+											<li><a href="">Граверные работы</a></li>
+											<li><a href="">Установка оград</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer__col">
+									<div class="footer__title">График работы</div>
+									<div class="footer__time">Ежедневно с 09-00 до 17-00</div>
+									<div class="footer__text">
+										<p>Но если вы не успеваете, позвоните нам, мы всегда Вас дождемся. </p>
+										<p>Если Вам не удобно ехать к нам на выставку, позвоните, мы приедем сами.</p>
+									</div>
+								</div>
+								<div class="footer__col">
+									<div class="footer__title">Контакты</div>
+									<div class="footer__address">142770, г. Москва, с/п Сосенское, Проектируемый проезд 35 Николо-Хованское кладбище.</div>
+									<div class="footer__contacts">
+										<p><a href="tel:+79265770705">+7 926 577 07 05</a></p>
+										<p><a href="mailto:memorialvip@mail.ru">memorialvip@mail.ru</a></p>
+										<p><a href="tel:+79261922988">+7 926 192 29 88</a></p>
+										<p><a href="mailto:ritualhovan@yandex.ru">ritualhovan@yandex.ru</a></p>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="footer__col col-lg-3">
-						<div class="footer__title"></div>
-						<div class="footer__nav">
-							<ul>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-							</ul>
+						<div class="footer__data row mid">
+							<a data-fancybox data-src="#popup-order" href="javascript:;" class="footer__btn btn btn_black">Вызвать замерщика</a>
+							<div class="footer__links">
+								<ul>
+									<li><a href=""><span class="mdi mdi-vk"></span></a></li>
+									<li><a href=""><span class="mdi mdi-facebook"></span></a></li>
+									<li><a href=""><span class="mdi mdi-twitter"></span></a></li>
+									<li><a href=""><span class="mdi mdi-odnoklassniki"></span></a></li>
+									<li><a href=""><span class="mdi mdi-instagram"></span></a></li>
+									<li><a href=""><span class="mdi mdi-youtube"></span></a></li>
+								</ul>
+							</div>
+							<a data-fancybox data-src="#popup-callback" href="javascript:;" class="footer__btn btn btn_black">Заказать звонок</a>
 						</div>
-					</div>
-					<div class="footer__col col-lg-3">
-						<div class="footer__title"></div>
-						<div class="footer__time"></div>
-						<div class="footer__text"></div>
-					</div>
-					<div class="footer__col col-lg-3">
-						<div class="footer__title"></div>
-						<div class="footer__address"></div>
-						<div class="footer__contacts">
-							<p><a href=""></a></p>
-							<p><a href=""></a></p>
-							<p><a href=""></a></p>
-							<p><a href=""></a></p>
-						</div>
+						<div class="footer__copy">Копирование текстов и фото материалов с сайта ЗАПРЕЩЕНО и преследуется по закону РФ. Факты нарушения незаконного использования выявляются.</div>
 					</div>
 				</div>
-				</div>
-				<div class="footer__data">
-					<a href="" class="footer__btn btn btn_black"></a>
-					<div class="footer__links">
-						<ul>
-							<li><a href=""><span class="mdi mdi-"></span></a></li>
-							<li><a href=""><span class="mdi mdi-"></span></a></li>
-							<li><a href=""><span class="mdi mdi-"></span></a></li>
-							<li><a href=""><span class="mdi mdi-"></span></a></li>
-							<li><a href=""><span class="mdi mdi-"></span></a></li>
-							<li><a href=""><span class="mdi mdi-"></span></a></li>
-							<li><a href=""><span class="mdi mdi-"></span></a></li>
-						</ul>
-					</div>
-					<a href="" class="footer__btn btn btn_black"></a>
-				</div>
-				<div class="footer__copy"></div>
 			</div>
 		</footer>
+	</div>
+	<div class="popup popup_small" id="popup-callback">
+		<div class="popup__close"><span class="mdi mdi-close"></span></div>
+		<div class="popup__title">Заказать звонок</div>
+		<div class="popup__wrap">
+      <div class="popup__input input">
+        <label for="" class="input__text">Ваше имя <span class="color-red">*</span></label>
+        <input type="text" class="input__wrap">
+        <div class="input__error error">Заполните поле</div>
+      </div>
+      <div class="popup__input input input_phone">
+        <label for="" class="input__text">Телефон <span class="color-red">*</span></label>
+        <input type="text" class="input__wrap">
+        <div class="input__error error">Заполните поле</div>
+      </div>
+      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+      <button class="popup__btn btn btn_img-bg">Отправить</button>
+      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+		</div>
+	</div>
+	<div class="popup popup_small" id="popup-order">
+		<div class="popup__close"><span class="mdi mdi-close"></span></div>
+		<div class="popup__title">Вызов замерщика</div>
+		<div class="popup__wrap">
+      <div class="popup__input input">
+        <label for="" class="input__text">Ваше имя <span class="color-red">*</span></label>
+        <input type="text" class="input__wrap">
+        <div class="input__error error">Заполните поле</div>
+      </div>
+      <div class="popup__input input input_phone">
+        <label for="" class="input__text">Телефон <span class="color-red">*</span></label>
+        <input type="text" class="input__wrap">
+        <div class="input__error error">Заполните поле</div>
+      </div>
+      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+      <button class="popup__btn btn btn_img-bg">Отправить</button>
+      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+		</div>
+	</div>
+	<div class="popup popup_small" id="popup-message">
+		<div class="popup__close"><span class="mdi mdi-close"></span></div>
+		<div class="popup__title">Написать письмо</div>
+		<div class="popup__wrap">
+      <div class="popup__input input">
+        <label for="" class="input__text">Ваша почта <span class="color-red">*</span></label>
+        <input type="text" class="input__wrap">
+        <div class="input__error error">Заполните поле</div>
+      </div>
+      <div class="popup__textarea textarea">
+        <label for="" class="textarea__text">Сообщение <span class="color-red">*</span></label>
+        <textarea class="textarea__wrap"></textarea>
+        <div class="textarea__error error">Заполните поле</div>
+      </div>
+      <div class="popup__captcha"><div class="g-recaptcha" data-sitekey="6LdmRWcUAAAAAEyDUT62ychFqTUHY4otkLxZh6Q7"></div></div>
+      <button class="popup__btn btn btn_img-bg">Отправить</button>
+      <div class="popup__policy">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с Политикой конфиденциальности сайта</div>
+		</div>
 	</div>
 </div>
 </body>
