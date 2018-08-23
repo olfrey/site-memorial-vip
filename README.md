@@ -1,5 +1,6 @@
 ## Используемые плагины
 Название | Назначние | Ссылка
+------ | ---- | -------
 jQuery   | - | [Ссылка](https://github.com/jquery/jquery)
 jQuery.Mask | Добавление маскок на текстовые поля | [Ссылка](https://github.com/igorescobar/jQuery-Mask-Plugin)
 jQuery.FormStyler | Изменение `<select>` | [Ссылка]()
