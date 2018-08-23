@@ -41,6 +41,10 @@ $(document).ready(function($) {
 		rows: 2
 	})
 
+	$('.other__list_4').slick({
+		slidesToShow: 4
+	})
+
 
 	// Nav hover
 	var linkMoreNav = $('.show-large-nav'),
@@ -70,6 +74,7 @@ $(document).ready(function($) {
 	}
 	valueElementForm('input', 'input');
 	valueElementForm('textarea', 'textarea');
+	valueElementForm('file', 'input');
 	
 	$('select').styler();
 
@@ -166,6 +171,12 @@ $(document).ready(function($) {
 		toggleItem($(this), 'faq');
 	});
 
+	// Link to #
+	$("a[href^='#']").click(function(){
+    var _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 1500);
+	  return false;
+	});
 
 	// Scroll
 	$('.scroll').perfectScrollbar();

@@ -28,7 +28,7 @@ body
 	font-family: $font-family-1
 	color: $color-1
 	background: white
-	background: url('../../img/bg.png')
+	background: url('../../img/min/bg.png')
 	
 
 ul
@@ -133,23 +133,50 @@ input, textarea, button
 		&:hover
 			background-color: #232323
 	&_img-bg
+		font-size: 20px
 		height: 50px
 		padding-left: 32px
 		padding-right: 32px
 		font-family: $font-family-2
-		background: url('../../img/monogram-small-left.png') no-repeat left center, url('../../img/monogram-small-right.png') no-repeat right center, #fff
+		background: url('../../img/min/monogram-small-left.png') no-repeat left center, url('../../img/min/monogram-small-right.png') no-repeat right center, #fff
 		border: 1px solid #bfbfbf
 		&:hover
 			background-position: left -30px center, right -30px center 
 	&_black
+		font-size: 20px
 		color: #fff
 		border: 2px solid #bfbfbf
 		background-color: #232323
+		font-family: $font-family-2
 		&:hover
 			color: #232323
 			border-color: #232323
 			background-color: #fff
 
+
+.file
+	input
+		display: none
+	label
+		font-size: 16px
+		color: #531010
+		font-family: $font-family-2
+		margin-left: 40px
+		position: relative
+		border-bottom: 1px solid #531010
+		cursor: pointer
+		transition: .3s
+		&:hover
+			border-color: transparent
+		&:before
+			top: 2px
+			left: -24px
+			position: absolute
+			display: block
+			content: ''
+			width: 16px
+			height: 16px
+			background: url('../../img/min/file.png')
 
 .input input, .textarea textarea
 	transition: .3s
@@ -175,6 +202,8 @@ input, .btn, .slick-slide, textarea
 	font-size: 20px
 	font-weight: 700
 	color: #531010
+	&-
+		margin-top: -4px
 
 
 .wrap
@@ -220,19 +249,19 @@ input, .btn, .slick-slide, textarea
 	&__top
 		height: 77px
 		top: 0
-		background-image: url('../../img/col-top.png')
+		background-image: url('../../img/min/col-top.png')
 		background-repeat: no-repeat
 
 	&__mid
 		top: 77px
 		bottom: 87px
 		height: 100%
-		background-image: url('../../img/col-mid.png')
+		background-image: url('../../img/min/col-mid.png')
 
 	&__foot
 		bottom: 0
 		height: 87px
-		background-image: url('../../img/col-foot.png')
+		background-image: url('../../img/min/col-foot.png')
 		background-repeat: no-repeat
 		
 
@@ -249,7 +278,7 @@ input, .btn, .slick-slide, textarea
 		font-size: 20px
 		padding-left: (37px + 15px)
 		padding-right: (37px + 15px)
-		background: url('../../img/monogram-big-left.png') left 17px no-repeat, url('../../img/monogram-big-right.png') right 17px no-repeat
+		background: url('../../img/min/monogram-big-left.png') left 17px no-repeat, url('../../img/min/monogram-big-right.png') right 17px no-repeat
 	
 	&__data
 		padding-top: 15px
@@ -308,7 +337,7 @@ input, .btn, .slick-slide, textarea
 
 .slider
 	position: relative
-	background: url('../../img/slider.png') no-repeat center
+	background: url('../../img/min/slider.png') no-repeat top
 	margin-top: -65px
 	&:before, &:after
 		content: ''
@@ -316,14 +345,43 @@ input, .btn, .slick-slide, textarea
 		right: 0
 		position: absolute
 		height: 7px
-		background: url('../../img/pattern-top.png') repeat-x center top
+		background: url('../../img/min/pattern-top.png') repeat-x center top
 	&:before
 		top: 0
 	&:after
 		bottom: 0
 
 	&__nav
-		display: none
+		// display: none
+		padding-top: 88px
+		padding-bottom: 49px
+		ul
+			justify-content: center
+			align-items: flex-start
+		li
+			width: 250px
+			height: 100px
+			margin-left: 7px
+			margin-right: 7px
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			border: 1px solid #ffffff
+			font-size: 22px
+			font-weight: 700
+			background-color: rgba(255,255,255,0.45)
+			text-align: center
+			transition: .3s
+			&:hover
+				background-color: rgba(255,255,255,1)
+			&:nth-of-type(2), &:nth-of-type(4)
+				margin-top: 40px
+			&:nth-of-type(3)
+				margin-top: 60px
+		a
+			display: block
+			padding: 10px
 	&__list
 		span
 			display: block
@@ -550,7 +608,7 @@ input, .btn, .slick-slide, textarea
 			left: 103px
 			width: 24px
 			height: 11px
-			background: url('../../img/arrow-top.png') no-repeat center
+			background: url('../../img/min/arrow-top.png') no-repeat center
 		&-col
 			width: 25%
 			border-right: 1px solid #ebebeb
@@ -621,7 +679,7 @@ input, .btn, .slick-slide, textarea
 
 .text-top
 	padding-top: 54px
-	padding-bottom: 45px
+	padding-bottom: 25px
 
 
 
@@ -710,21 +768,24 @@ input, .btn, .slick-slide, textarea
 			&__btn
 				height: 46px
 				opacity: 0
+				left: auto
 				&.search__btn-show
 					opacity: 1
-					width: auto
-					left: 3px
+					width: 46px
+					left: auto
 					right: 3px
 					z-index: 2
 	&_show
 		width: 225px
 		.search
 			&__input
-
+				padding-left: 15px
+				padding-right: 60px
 			&__btn
 				z-index: 2
 				opacity: 1 !important
 				&.search__btn-show
+					display: none
 					opacity: 0
 					z-index: -2
 				
@@ -733,6 +794,9 @@ input, .btn, .slick-slide, textarea
 		
 			
 .nav-block
+	&__toggle-btn
+		display: none
+		
 	&__wrap
 		padding-bottom: 5px
 		border-bottom: 1px solid #ebebeb
@@ -763,8 +827,8 @@ input, .btn, .slick-slide, textarea
 			padding-left: 20px
 			margin-bottom: 4px
 			padding-right: 15px
-			padding-top: 1px
-			padding-bottom: 1px
+			padding-top: 0px
+			padding-bottom: 0px
 			&:last-of-type
 				margin-bottom: 0
 			&:before
@@ -828,7 +892,7 @@ input, .btn, .slick-slide, textarea
 						left: -2px
 						width: 11px
 						height: 24px
-						background: url('../../img/arrow-left.png') no-repeat center
+						background: url('../../img/min/arrow-left.png') no-repeat center
 					li
 						&:hover
 							cursor: default
@@ -864,6 +928,9 @@ input, .btn, .slick-slide, textarea
 
 
 .catalog
+	&__title
+		margin-bottom: 28px
+		
 	&__filter
 		margin-left: -15px
 		margin-right: -15px
@@ -893,7 +960,7 @@ input, .btn, .slick-slide, textarea
 	&_hidden-nav
 		.item
 			&__control
-				// display: none
+				display: none
 				
 	&__control
 		&-item
@@ -935,9 +1002,10 @@ input, .btn, .slick-slide, textarea
 	&__text
 		font-size: 18px
 		height: 65px
-		padding: 5px 15px
+		padding: 7px 15px
 		text-align: center
 		font-weight: 700
+		background-color: #fff
 		a
 			color: #531010
 			&:hover
@@ -1058,17 +1126,11 @@ input, .btn, .slick-slide, textarea
 
 // margin-size : maz
 
-.mt65
-	margin-top: 65px
-
-.mt40
-	margin-top: 40px
-
 .form
 	&__wrap
 		position: relative
 		background-color: #ffffff
-		padding: 20px 20px 20px 40px
+		padding: 20px 20px 0px 40px
 		border: 1px solid #bfbfbf
 		&:before, &:after
 			content: ''
@@ -1076,7 +1138,7 @@ input, .btn, .slick-slide, textarea
 			right: 0
 			position: absolute
 			height: 7px
-			background: url('../../img/pattern-top.png') repeat-x center top
+			background: url('../../img/min/pattern-top.png') repeat-x center top
 		&:before
 			top: -1px
 		&:after
@@ -1096,6 +1158,11 @@ input, .btn, .slick-slide, textarea
 	&__input
 		margin-bottom: 34px
 
+	&__file
+		margin-top: -20px
+		padding-bottom: 20px
+		
+
 	&__desc
 		font-family: $font-family-2
 		text-align: center
@@ -1105,6 +1172,16 @@ input, .btn, .slick-slide, textarea
 			color: #6e3e3e
 			margin-left: 4px
 			margin-right: 4px
+		a
+			.span-text
+				transition: .3s
+				border-bottom: 1px solid transparent
+			font-family: $font-family-1
+			font-size: 18px
+			&:hover
+				.span-text
+					color: #531010
+					border-color: #531010
 
 	&__left
 		width: 260px
@@ -1123,7 +1200,17 @@ input, .btn, .slick-slide, textarea
 	&__btn
 		width: 100%
 		margin-right: 10px
+		&_more
+			margin-top: 41px
 
+	&__textarea
+		&_more
+			.textarea
+				&__wrap
+					height: 170px
+
+				
+		
 		
 		
 		
@@ -1395,8 +1482,15 @@ input, .btn, .slick-slide, textarea
 		color: #531010
 		font-family: $font-family-1
 	h2
-		font-size: 24px
+		font-size: 20px
 		margin-bottom: 20px
+	h3
+		font-size: 20px
+		margin-bottom: 7px
+	h4
+		color: $color-1
+		font-family: $font-family-2
+		margin-bottom: 5px
 	p
 		margin-bottom: 20px
 		&:last-of-type
@@ -1433,6 +1527,9 @@ input, .btn, .slick-slide, textarea
 		li
 			position: relative
 			padding-left: 21px
+			margin-bottom: 6px
+			&:last-of-type
+				margin-bottom: 0
 			&:before
 				top: 10px
 				left: 0
@@ -1461,8 +1558,50 @@ input, .btn, .slick-slide, textarea
 		&.right
 			float: right
 			margin-left: 40px
-		
 
+	table
+		color: #fff
+		border-collapse: collapse
+		tr
+			&:nth-of-type(odd)
+				td
+					background-color: rgba(0,0,0,.55)
+			&:nth-of-type(even)
+				td
+					background-color: rgba(0,0,0,.45)
+		th, td
+			border: 1px solid #fff
+			padding: 3px 5px
+
+		a
+			color: #fff
+			border-color: #fff
+			&:hover
+				border-color: transparent
+
+	blockquote
+		font-style: normal
+		margin-bottom: 45px
+		position: relative
+		padding-left: 25px
+		font-weight: 700
+		margin-top: 20px
+		&:before
+			content: '\f2fc'
+			position: absolute
+			top: 0
+			left: 0
+			font-family: "Material Design Icons"
+			color: #531010
+			font-weight: 400
+
+.pay
+	&__title
+		font-weight: 700
+		font-family: $font-family-2
+		margin-bottom: 15px
+
+		
 .types
 	&__list
 		font-size: 0
@@ -1549,10 +1688,11 @@ input, .btn, .slick-slide, textarea
 
 .photos
 	&_lines
-		padding-top: 24px
-		padding-bottom: 12px
+		padding-top: 20px
+		padding-bottom: 10px
 		border-top: 1px solid #bfbfbf
 		border-bottom: 1px solid #bfbfbf
+		margin-top: 20px
 	&__list
 		margin-left: -10px
 		margin-right: -10px
@@ -1580,7 +1720,7 @@ input, .btn, .slick-slide, textarea
 				transform: translate(-50%, -50%) scale(.0)
 				width: 81px
 				height: 80px
-				background: url('../../img/magnifi.png') no-repeat center
+				background: url('../../img/min/magnifi.png') no-repeat center
 				transition: .3s
 			&:after
 				opacity: 0
@@ -1610,7 +1750,62 @@ input, .btn, .slick-slide, textarea
 		font-size: 0
 		width: 100%
 		height: 350px
-	#map
+		padding-bottom: 4px	
+		border: 1px solid #e3c3bd
+	&__case
+		position: relative	
+		// padding-bottom: 10px	
+		
+.small-logo
+	width: 122px
+	height: 122px
+	margin-left: auto
+	margin-right: auto
+
+.requisites
+	font-family: $font-family-2
+	a
+		color: #fff
+	&__download
+		ul
+			display: flex
+			height: 70px
+			font-size: 16px
+			background-color: rgba(0,0,0,.45)
+			width: 100%
+			justify-content: space-between
+			align-items: center
+			padding: 5px 15px
+		li
+			max-width: 330px
+			.mdi
+				margin-right: 6px
+
+			a
+				border-color: #fff
+				&:hover
+					border-color: transparent
+
+	&__table
+		margin-left: -1px
+		margin-right: -1px
+		table
+			width: 100%
+			font-size: 20px
+			td, th
+				min-height: 70px
+				padding: 22px 44px
+				&:nth-of-type(1)
+					text-align: right
+					width: 27%
+					font-weight: 700
+			.td-small
+				padding-top: 9px
+				padding-bottom: 9px
+			img
+				margin-top: 0
+				margin-bottom: 0
+
 
 		
 
@@ -1692,7 +1887,39 @@ input, .btn, .slick-slide, textarea
 		// height: 400px
 	.nano-content
 		// width: 2000px
+	&__aside
+		width: 240px
+		background-color: #fbfafa
+		margin-right: 25px
+		border: 1px solid #ebebeb
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1)
+		padding-bottom: 30px
+		&-list
+			padding: 20px 16px 35px
+			border-bottom: 1px solid #ebebeb
 
+		&-text
+			font-family: $font-family-2
+			font-size: 16px
+			font-weight: 700
+			padding: 40px 14px 36px
+			border-bottom: 1px solid #ebebeb
+			li
+				width: 100%
+				margin-bottom: 10px
+				&:nth-of-type(1)
+					margin-bottom: 30px
+				&:last-of-type
+					margin-bottom: 0
+				&:nth-last-of-type(2)
+					margin-bottom: 62px
+
+	&__list
+		width: calc(100% - 240px - 25px)
+
+
+		
+		
 	&__item
 		width: 370px
 		padding-left: 20px
@@ -1818,7 +2045,7 @@ input, .btn, .slick-slide, textarea
 				transform: translate(-50%, -50%) scale(.0)
 				width: 81px
 				height: 80px
-				background: url('../../img/magnifi.png') no-repeat center
+				background: url('../../img/min/magnifi.png') no-repeat center
 				transition: .3s
 			&:after
 				z-index: 1
@@ -1952,6 +2179,10 @@ input, .btn, .slick-slide, textarea
 	&__btn
 		width: 295px
 		margin-top: 16px
+
+	&__desc
+		margin-top: 53px
+		font-family: $font-family-2
 		
 	
 .faq
@@ -2011,7 +2242,7 @@ input, .btn, .slick-slide, textarea
 				transform: translate(-50%, -50%) scale(.0)
 				width: 81px
 				height: 80px
-				background: url('../../img/magnifi.png') no-repeat center
+				background: url('../../img/min/magnifi.png') no-repeat center
 				transition: .3s
 			&:after
 				z-index: 1
@@ -2040,9 +2271,14 @@ input, .btn, .slick-slide, textarea
 		font-size: 14px
 		a
 			color: #531010
+			font-weight: 700
 		span
 			display: inline-block
 			vertical-align: middle
+		.mdi
+			font-weight: 400
+			position: relative
+			top: -1px
 		.text-comment
 			transition: .3s
 			border-bottom: 1px solid transparent
@@ -2065,6 +2301,15 @@ input, .btn, .slick-slide, textarea
 					width: calc(33.333% - 26px)
 					margin-left: 13px
 					margin-right: 13px
+				&__body
+					// height: 195px
+					height: calc(100% - 50px)
+					background-color: transparent
+
+				&__text
+					height: 100px
+					
+					
 		
 
 	&__item
@@ -2099,7 +2344,7 @@ input, .btn, .slick-slide, textarea
 		border: 1px solid #e3c3bd
 		background-color: #fff
 		margin-top: -50px
-		padding: 59px 25px 6px 15px
+		padding: 59px 15px 6px 15px
 
 	&__text
 		font-size: 16px
@@ -2160,7 +2405,7 @@ input, .btn, .slick-slide, textarea
 				transform: translate(-50%, -50%) scale(.0)
 				width: 81px
 				height: 80px
-				background: url('../../img/magnifi.png') no-repeat center
+				background: url('../../img/min/magnifi.png') no-repeat center
 				transition: .3s
 			&:after
 				z-index: 1
@@ -2191,7 +2436,7 @@ input, .btn, .slick-slide, textarea
 
 .steps
 	&__title
-		margin-bottom: 48px
+		margin-bottom: 78px
 		
 
 	&__item
@@ -2271,6 +2516,8 @@ input, .btn, .slick-slide, textarea
 	margin-left: auto
 	margin-right: auto
 	text-align: center
+	padding-top: 80px
+	padding-bottom: 20px
 	&__count
 		font-size: 300px
 		line-height: 240px
@@ -2312,8 +2559,11 @@ input, .btn, .slick-slide, textarea
 	a
 		color: #531010
 		border-color: #531010
+		font-weight: 700
 		&:hover
 			border-color: transparent
+		.mdi
+			font-weight: 400
 
 
 
@@ -2364,7 +2614,7 @@ input, .btn, .slick-slide, textarea
 				transform: translate(-50%, -50%) scale(.0)
 				width: 81px
 				height: 80px
-				background: url('../../img/magnifi.png') no-repeat center
+				background: url('../../img/min/magnifi.png') no-repeat center
 				transition: .3s
 			&:after
 				z-index: 1
@@ -2459,9 +2709,37 @@ input, .btn, .slick-slide, textarea
 			display: block
 			width: 23px
 			height: 23px
-			background: url('../../img/read.png') no-repeat center
+			background: url('../../img/min/read.png') no-repeat center
 			&:hover
 				opacity: 1
+		
+
+
+
+.other
+	&__title
+		margin-bottom: 35px
+	&__list
+		padding-left: 32px
+		padding-right: 32px
+		.slick-prev
+			left: -7px
+		.slick-next
+			right: -7px
+		&_4
+			.other
+				&__item
+					padding-left: 15px
+					padding-right: 15px
+					
+	&__item
+		.catalog
+			&__item
+				margin-left: 0
+				margin-right: 0
+				width: 100%
+
+		
 		
 
 .help
@@ -2475,6 +2753,7 @@ input, .btn, .slick-slide, textarea
 	height: 50px
 	padding: 0 50px
 	position: relative
+	border-top: 1px solid #e3c3bd
 	&:before, &:after
 		top: 0
 		bottom: 0
@@ -2518,7 +2797,7 @@ input, .btn, .slick-slide, textarea
 
 
 .footer
-	background: url('../../img/footer.png') no-repeat center 7px, url('../../img/steps.png') no-repeat center 429px
+	background: url('../../img/min/footer.png') no-repeat center 7px, url('../../img/min/steps.png') no-repeat center 429px
 	position: relative
 	padding-top: 60px
 	&:before
@@ -2527,7 +2806,7 @@ input, .btn, .slick-slide, textarea
 		right: 0
 		position: absolute
 		height: 7px
-		background: url('../../img/pattern-top.png') repeat-x center top
+		background: url('../../img/min/pattern-top.png') repeat-x center top
 		top: 0
 	&__shades
 		position: relative
@@ -2540,11 +2819,11 @@ input, .btn, .slick-slide, textarea
 			background-position: center
 			background-repeat: no-repeat
 		&:before
-			background-image: url('../../img/shtorka-left.png')
+			background-image: url('../../img/min/shtorka-left.png')
 			left: 37px
 
 		&:after
-			background-image: url('../../img/shtorka-right.png')
+			background-image: url('../../img/min/shtorka-right.png')
 			right: 37px
 	&__lamp
 		&:before, &:after
@@ -2555,7 +2834,7 @@ input, .btn, .slick-slide, textarea
 			height: 160px
 			background-position: center
 			background-repeat: no-repeat
-			background-image: url('../../img/lamp.png')
+			background-image: url('../../img/min/lamp.png')
 		&:before
 			left: 120px
 
@@ -2709,6 +2988,8 @@ input, .btn, .slick-slide, textarea
 
 	&__text
 		text-align: center
+
+
 		
 	.fancybox-close-small
 		display: none
@@ -2755,23 +3036,46 @@ input, .btn, .slick-slide, textarea
 	&_white
 		.slick-arrow
 			background-color: #fff
+			border: 2px solid #fff
+			&:hover
+				background-color: #531010
+				border: 2px solid #fffcf9
 		.slick-prev
 			&:before
 				border-color: transparent #531010 transparent transparent
+			&:hover
+				&:before
+					border-color: transparent #fff transparent transparent
+
 		.slick-next
 			&:before
 				border-color: transparent transparent transparent #531010
+			&:hover
+				&:before
+					border-color: transparent transparent transparent #fff
+
 
 	&_brown
 		.slick-arrow
 			background-color: #531010
 			border: 2px solid #fffcf9
+			&:hover
+				background-color: #fff
+				border-color: #531010
 		.slick-prev
 			&:before
 				border-color: transparent #fff transparent transparent
+			&:hover
+				&:before
+					border-color: transparent #531010 transparent transparent
 		.slick-next
 			&:before
 				border-color: transparent transparent transparent #fff
+			&:hover
+				&:before
+					border-color: transparent transparent transparent #531010
+				
+
 
 	&_middle
 		.slick-arrow
@@ -2785,6 +3089,52 @@ input, .btn, .slick-slide, textarea
 
 .mobile-nav
 	display: none
+
+
+.mt15
+	margin-top: 15px
+
+.mt25
+	margin-top: 25px
+
+.mt30
+	margin-top: 30px
+
+.mt35
+	margin-top: 35px
+
+.mt40
+	margin-top: 40px
+
+.mt45
+	margin-top: 45px
+
+.mt55
+	margin-top: 55px
+
+.mt60
+	margin-top: 60px
+
+.mt65
+	margin-top: 65px
+
+.mt70
+	margin-top: 70px
+
+.mt75
+	margin-top: 75px
+
+.mt80
+	margin-top: 80px
+
+.mt85
+	margin-top: 85px
+
+.mt90
+	margin-top: 90px
+
+.mt95
+	margin-top: 95px
 
 .ps
 	position: relative
