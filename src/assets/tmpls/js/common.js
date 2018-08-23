@@ -1,19 +1,48 @@
 $(document).ready(function($) {
 
+	// Add mask
 	$('.input_phone .input__wrap').mask('+7 (000) 000-00-00');
 
-
+	// Init sliders
 	$('.slider__list').slick({
 
 	})
+	$('.card__slider').each(function(index, el) {
+		var image = $(this).find('.card__image'),
+				images = $(this).find('.card__images');
+
+		image.slick({
+			arrows: false,
+			asNavFor: images
+		});
+
+		images.slick({
+			slidesToShow: 3,
+			asNavFor: image,
+			focusOnSelect: true
+		});
+	});
+
+	$('.certificates__list').slick({
+		slidesToShow: 2
+	})
+
+	$('.gallery__list_2').slick({
+		slidesToShow: 2,
+	})
+
+	$('.gallery__list_4').slick({
+		slidesToShow: 2,
+		rows: 2
+	})
+
+	$('.gallery__list_6').slick({
+		slidesToShow: 3,
+		rows: 2
+	})
 
 
-	// $(".nano").nanoScroller({
-	// 	alwaysVisible: true
-	// });
-
-
-
+	// Nav hover
 	var linkMoreNav = $('.show-large-nav'),
 			moreNav = $('.nav__sub-nav');
 
@@ -26,6 +55,7 @@ $(document).ready(function($) {
 	});
 
 
+	// Label + el
 	function valueElementForm(nameElement, blockElement) {
 		var newNameElement = '.' + nameElement;
 			element = $(newNameElement);
@@ -44,23 +74,7 @@ $(document).ready(function($) {
 	$('select').styler();
 
 
-	$('.card__slider').each(function(index, el) {
-		var image = $(this).find('.card__image'),
-				images = $(this).find('.card__images');
-
-		image.slick({
-			arrows: false,
-			asNavFor: images
-		});
-
-		images.slick({
-			slidesToShow: 3,
-			asNavFor: image,
-			focusOnSelect: true
-		});
-	});
-
-
+	// Card toggle elems
 	$('.card__type-item:nth-of-type(1)').addClass('card__type-item_check');
 	$('.card__slider:nth-of-type(1)').addClass('card__slider_show');
 
@@ -71,7 +85,6 @@ $(document).ready(function($) {
 		if (!slider.hasClass('card__slider_show')) {
 			$('.card__slider').removeClass('card__slider_show');
 			$('.card__type-item').removeClass('card__type-item_check');
-			// slider.hide();
 
 			$(this).addClass('card__type-item_check');
 			slider.addClass('card__slider_show');
@@ -79,6 +92,7 @@ $(document).ready(function($) {
 		}
 	});
 
+	// Toggle elems for click
 	function hiddenToggleBtn(element, nameBlock) {
 		element.each(function(index, el) {
 			var textP = $(this).find('.'+nameBlock+'__text p'),
@@ -111,6 +125,7 @@ $(document).ready(function($) {
 	});
 
 
+	// Comparison add width
 	var comparisonList = $('.comparison__list .nano-content'),
 			comparisonItem = $('.comparison__item');
 
@@ -135,12 +150,14 @@ $(document).ready(function($) {
 	}
 
 
+	// Show search on click
 	$('.search__btn-show').on('click', function(event) {
 		var search = $(this).parents('.search');
 		search.addClass('search_show');
 	});
 
 
+	// Init toggle funciton
 	$('.jobs__head').on('click', function() {
 		toggleItem($(this), 'jobs');
 	});
@@ -150,24 +167,6 @@ $(document).ready(function($) {
 	});
 
 
-	$('.certificates__list').slick({
-		slidesToShow: 2
-	})
-
-	$('.gallery__list_2').slick({
-		slidesToShow: 2,
-	})
-
-	$('.gallery__list_4').slick({
-		slidesToShow: 2,
-		rows: 2
-	})
-
-	$('.gallery__list_6').slick({
-		slidesToShow: 3,
-		rows: 2
-	})
-
+	// Scroll
 	$('.scroll').perfectScrollbar();
-	 
 });
