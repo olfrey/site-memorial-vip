@@ -112,6 +112,9 @@ $(document).ready(function($) {
 	valueElementForm('textarea', 'textarea');
 	valueElementForm('file', 'input');
 	
+
+	$('select[data-placeholder]').find('option:nth-of-type(1)').html('');
+
 	$('select').styler();
 
 

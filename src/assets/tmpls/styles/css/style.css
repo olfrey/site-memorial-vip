@@ -1267,15 +1267,27 @@ input, .btn, .slick-slide, textarea {
 .pagination li.prev {
   margin-right: 20px;
   font-size: 0; }
-  .pagination li.prev a:after {
-    border-width: 5px 6px 5px 0;
-    border-color: transparent #ffffff transparent transparent; }
+  .pagination li.prev a {
+    border: 2px solid #531010; }
+    .pagination li.prev a:after {
+      border-width: 5px 6px 5px 0;
+      border-color: transparent #ffffff transparent transparent; }
+    .pagination li.prev a:hover {
+      background-color: #fff; }
+      .pagination li.prev a:hover:after {
+        border-color: transparent #531010 transparent transparent; }
 
 .pagination li.next {
   margin-left: 20px; }
-  .pagination li.next a:after {
-    border-width: 5px 0 5px 6px;
-    border-color: transparent transparent transparent #ffffff; }
+  .pagination li.next a {
+    border: 2px solid #531010; }
+    .pagination li.next a:after {
+      border-width: 5px 0 5px 6px;
+      border-color: transparent transparent transparent #ffffff; }
+    .pagination li.next a:hover {
+      background-color: #fff; }
+      .pagination li.next a:hover:after {
+        border-color: transparent transparent transparent #531010; }
 
 .form__wrap {
   position: relative;
@@ -1736,12 +1748,12 @@ input, .btn, .slick-slide, textarea {
   .text img {
     margin-bottom: 24px;
     margin-top: 3px; }
-    .text img.left {
-      float: left;
-      margin-right: 40px; }
-    .text img.right {
-      float: right;
-      margin-left: 40px; }
+  .text .left {
+    float: left;
+    margin-right: 40px; }
+  .text .right {
+    float: right;
+    margin-left: 40px; }
   .text table {
     color: #fff;
     border-collapse: collapse; }
@@ -1793,7 +1805,7 @@ input, .btn, .slick-slide, textarea {
   .types__item:hover .types__title {
     color: #531010; }
   .types__item:hover .types__link .mdi:before {
-    content: '\f416'; }
+    content: '\f417'; }
 
 .types__text {
   display: -webkit-box;
@@ -1869,6 +1881,14 @@ input, .btn, .slick-slide, textarea {
 .photos__list {
   margin-left: -10px;
   margin-right: -10px; }
+  .photos__list_more {
+    margin-left: -15px;
+    margin-right: -15px; }
+    .photos__list_more .photos__item {
+      width: -webkit-calc(25% - 30px);
+      width: calc(25% - 30px);
+      margin-left: 15px;
+      margin-right: 15px; }
 
 .photos__item {
   width: -webkit-calc(25% - 20px);
@@ -1929,6 +1949,10 @@ input, .btn, .slick-slide, textarea {
     height: 350px;
     padding-bottom: 4px;
     border: 1px solid #e3c3bd; }
+    .map__wrap iframe {
+      width: 100%;
+      height: 350px;
+      border: 0; }
   .map__case {
     position: relative; }
 
@@ -3159,6 +3183,42 @@ input, .btn, .slick-slide, textarea {
     margin-right: auto;
     padding-bottom: 11px; }
 
+.articles__list {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.articles__item {
+  width: -webkit-calc(33.333% - 30px);
+  width: calc(33.333% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #e3c3bd;
+  background-color: #ffffff;
+  padding: 20px 15px; }
+
+.articles__subtitle, .articles__text {
+  font-family: "Roboto", sans-serif; }
+
+.articles__subtitle {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700; }
+
+.articles__text, .articles__link {
+  font-size: 16px; }
+
+.articles__link {
+  margin-top: 9px; }
+  .articles__link a {
+    color: #531010;
+    font-weight: 700; }
+    .articles__link a:hover {
+      border-color: #531010; }
+  .articles__link .mdi {
+    margin-left: 3px;
+    position: relative;
+    top: -1px; }
+
 .popup {
   display: none;
   position: relative;
@@ -3204,6 +3264,19 @@ input, .btn, .slick-slide, textarea {
 
 .input-hidden {
   display: none; }
+
+.img-wrap {
+  position: relative; }
+  .img-wrap__img img {
+    margin-bottom: 0; }
+  .img-wrap__text {
+    font-size: 14px;
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 12px; }
 
 .color-red {
   color: #f00; }
@@ -3354,15 +3427,16 @@ input, .btn, .slick-slide, textarea {
             border-radius: 0;
     left: -1px; }
 
-.ps.ps--active-x > .ps__scrollbar-x-rail {
+.ps > .ps__scrollbar-x-rail {
+  display: block !important;
   opacity: 1 !important;
-  height: 4px !important;
+  height: 6px !important;
   background-color: #b7b7b7 !important;
   -webkit-border-radius: 0;
           border-radius: 0;
-  margin-bottom: 2px; }
-  .ps.ps--active-x > .ps__scrollbar-x-rail .ps__scrollbar-x {
-    height: 7px !important;
+  margin-bottom: 3px; }
+  .ps > .ps__scrollbar-x-rail .ps__scrollbar-x {
+    height: 9px !important;
     background-color: #531010 !important;
     -webkit-border-radius: 0;
             border-radius: 0;

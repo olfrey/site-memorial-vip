@@ -291,34 +291,37 @@
 			a
 				// display: block
 
-	.form
-		&__wrap
-			padding-left: 20px
-			padding-bottom: 20px
-			
-		&__elements
-			justify-content: center
-			
-		&__left
-			width: 200px
+	.section
+		.form
+			&__wrap
+				padding-left: 20px
+				padding-bottom: 20px
+				
+			&__elements
+				justify-content: center
+				
+			&__left
+				width: 200px
 
-		&__mid
-			width: calc(100% - 215px)
-			margin-left: 15px
-			margin-right: 0
+			&__mid
+				width: calc(100% - 215px)
+				margin-left: 15px
+				margin-right: 0
 
-		&__input, &__textarea
-			margin-bottom: 20px
-			
-		&__right
+			&__input, &__textarea
+				// margin-bottom: 20px
+				
+			&__right
 
-		&__btn
-			margin-bottom: 0
+			&__btn
+				margin-bottom: 0
+
+
 
 
 	.textarea
 		&__wrap
-			height: 120px
+			// height: 170px
 
 
 	.catalog, .services
@@ -422,7 +425,7 @@
 			margin-left: 0
 
 	.form__textarea_more .textarea__wrap
-		height: 120px
+		height: 134px
 	
 	.form__btn_more
 		margin-top: 0
@@ -464,6 +467,17 @@
 		&__search
 			// display: none
 			
+	.help
+		height: 70px
+		padding: 9px 180px
+		&:before
+			border-width: 70px 65px 0 0
+		&:after
+			border-width: 0 65px 70px 0
+
+	.contacts__block_mt
+		margin-top: 70px
+
 			
 			
 
@@ -688,9 +702,18 @@
 
 		&__data
 			margin-top: 0
+
+		&__nav
+			li
+				&:before
+					opacity: 0
+			
 			
 		&__nav, &__contacts, &__text, &__address, &__time
 			display: none
+			text-align: center
+			margin-left: auto
+			margin-right: auto
 			
 		&__body
 			height: auto
@@ -731,13 +754,16 @@
 			margin-left: auto !important
 			margin-right: auto !important
 			margin-bottom: 20px
-			&.left, &.right
-				float: none
+		.left, .right
+			float: none
 
 	.section
 		.text-bottom
 			&:first-of-type
 				margin-top: 0
+
+	.help
+		padding: 9px 120px
 
 
 
@@ -754,7 +780,7 @@
 		left: 0
 		right: 0
 		top: 0
-		position: relative
+		position: fixed
 		display: flex
 		padding-left: 15px
 		padding-right: 15px
@@ -818,6 +844,7 @@
 		background-color: #fff
 		position: relative
 		z-index: 11
+		padding-top: 47px
 		&__wrap
 			max-width: 280px
 			margin-left: auto
@@ -891,11 +918,10 @@
 			
 	.nav
 		z-index: 11
-		position: relative
 		left: 0
 		right: 0
 		top: 0
-		position: absolute
+		position: fixed
 		transition: .3s
 		transform: translateY(-100%)
 		&_toggle
@@ -911,15 +937,16 @@
 			text-align: left
 		&__list
 			width: 100%
-			padding-top: 30px
-			padding-bottom: 30px
+			padding-top: 15px
+			padding-bottom: 15px
 			padding-left: 15px
 			padding-right: 15px
 			text-align: left
 			> ul
 				> li
 					background: none !important
-					margin-bottom: 10px
+					margin-bottom: 6px
+					display: block !important
 					&:last-of-type
 						margin-bottom: 0
 					> a
@@ -969,10 +996,17 @@
 			
 			
 		&__left, &__mid
-			width: 100%
+			width: 100% !important
+
+		&__right
+			margin-top: 20px !important
+			margin-left: auto !important
+			margin-right: auto !important
+			
 
 		&__mid
-			margin-left: 0
+			margin-left: 0 !important
+			margin-right: 0 !important
 
 		&__captcha
 			margin-bottom: 20px
@@ -1191,7 +1225,7 @@
 			
 		&__item
 			text-align: center
-			width: calc(50% - 30px)
+			width: calc(50% - 30px) !important
 			a
 				display: inline-block
 			
