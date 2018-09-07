@@ -508,8 +508,7 @@
     margin-right: 15px; }
   .footer {
     padding-bottom: 40px;
-    background: url("../../img/min/footer.png") no-repeat center 0;
-    background-size: 480%; }
+    background: url("../../img/min/footer.png") repeat center 0; }
     .footer__col {
       width: 100%;
       margin-bottom: 15px;
