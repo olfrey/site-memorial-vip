@@ -500,10 +500,16 @@
     width: calc(33.333% - 20px); }
   .card__right {
     margin-top: 100px; }
+  .section .form__left {
+    width: 160px; }
+  .section .form__mid {
+    width: -webkit-calc(100% - 160px - 304px - 30px);
+    width: calc(100% - 160px - 304px - 30px);
+    margin-right: 15px; }
   .footer {
     padding-bottom: 40px;
     background: url("../../img/min/footer.png") no-repeat center 0;
-    background-size: cover; }
+    background-size: 480%; }
     .footer__col {
       width: 100%;
       margin-bottom: 15px;
