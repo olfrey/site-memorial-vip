@@ -356,7 +356,7 @@ input, .btn, .slick-slide, textarea {
 .wrap {
   position: relative; }
 
-.main-wrap {
+.wrap {
   max-width: 1905px;
   margin-left: auto;
   margin-right: auto; }
@@ -375,8 +375,6 @@ input, .btn, .slick-slide, textarea {
   .column__item {
     position: absolute;
     top: 0;
-    height: -webkit-calc(100% - 233px);
-    height: calc(100% - 233px);
     width: 71px; }
     .column__item_left {
       left: 0; }
@@ -411,7 +409,7 @@ input, .btn, .slick-slide, textarea {
   position: relative; }
   .panel__wrap {
     padding-top: 11px;
-    font-size: 20px;
+    font-size: 19px;
     padding-left: 52px;
     padding-right: 52px;
     background: url("../../img/min/monogram-big-left.png") left 17px no-repeat, url("../../img/min/monogram-big-right.png") right 17px no-repeat; }
@@ -2247,19 +2245,19 @@ input, .btn, .slick-slide, textarea {
   .certificates__list .slick-next {
     right: 0; }
 
-.certificates__item {
+.certificates li {
   padding-left: 28px;
   padding-right: 28px; }
-  .certificates__item a {
+  .certificates li a {
     position: relative;
     display: block; }
-    .certificates__item a:hover:before {
+    .certificates li a:hover:before {
       -webkit-transform: translate(-50%, -50%) scale(1);
           -ms-transform: translate(-50%, -50%) scale(1);
               transform: translate(-50%, -50%) scale(1); }
-    .certificates__item a:hover:after {
+    .certificates li a:hover:after {
       opacity: 1; }
-    .certificates__item a:before {
+    .certificates li a:before {
       content: '';
       display: block;
       position: absolute;
@@ -2274,7 +2272,7 @@ input, .btn, .slick-slide, textarea {
       background: url("../../img/min/magnifi.png") no-repeat center;
       -webkit-transition: .3s;
       transition: .3s; }
-    .certificates__item a:after {
+    .certificates li a:after {
       z-index: 1;
       opacity: 0;
       content: '';
@@ -2382,7 +2380,6 @@ input, .btn, .slick-slide, textarea {
 .jobs__head, .faq__head {
   font-size: 17px;
   font-weight: 500;
-  height: 52px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2393,7 +2390,7 @@ input, .btn, .slick-slide, textarea {
           align-items: center;
   position: relative;
   cursor: pointer;
-  padding: 0 12px;
+  padding: 9px 12px;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
@@ -2638,18 +2635,18 @@ input, .btn, .slick-slide, textarea {
   .gallery__list .slick-next {
     right: -22.5px; }
 
-.gallery__item {
+.gallery li {
   padding: 1px; }
-  .gallery__item a {
+  .gallery li a {
     position: relative;
     display: block; }
-    .gallery__item a:hover:before {
+    .gallery li a:hover:before {
       -webkit-transform: translate(-50%, -50%) scale(1);
           -ms-transform: translate(-50%, -50%) scale(1);
               transform: translate(-50%, -50%) scale(1); }
-    .gallery__item a:hover:after {
+    .gallery li a:hover:after {
       opacity: 1; }
-    .gallery__item a:before {
+    .gallery li a:before {
       content: '';
       display: block;
       position: absolute;
@@ -2664,7 +2661,7 @@ input, .btn, .slick-slide, textarea {
       background: url("../../img/min/magnifi.png") no-repeat center;
       -webkit-transition: .3s;
       transition: .3s; }
-    .gallery__item a:after {
+    .gallery li a:after {
       z-index: 1;
       opacity: 0;
       content: '';
@@ -2702,10 +2699,15 @@ input, .btn, .slick-slide, textarea {
   color: #531010;
   text-align: center;
   position: relative;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  margin-bottom: 75px;
+  margin-right: 92px; }
+  .steps__item:nth-of-type(4) {
+    margin-right: 0; }
   .steps__item:last-of-type:before {
     display: none; }
   .steps__item:before {
+    z-index: 1;
     content: '';
     position: absolute;
     top: 50%;
@@ -3014,8 +3016,7 @@ input, .btn, .slick-slide, textarea {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
-  padding: 0 50px;
+  padding: 12px 50px;
   position: relative;
   border-top: 1px solid #e3c3bd; }
   .help:before, .help:after {
@@ -3050,7 +3051,7 @@ input, .btn, .slick-slide, textarea {
       border-color: transparent; }
 
 .footer {
-  background: url("../../img/min/footer.png") no-repeat center 7px, url("../../img/min/steps.png") no-repeat center 429px;
+  background: url("../../img/min/footer.png") repeat-y center 7px;
   position: relative;
   padding-top: 60px; }
   .footer:before {
@@ -3062,7 +3063,8 @@ input, .btn, .slick-slide, textarea {
     background: url("../../img/min/pattern-top.png") repeat-x center top;
     top: 0; }
   .footer__shades {
-    position: relative; }
+    position: relative;
+    min-height: 403px; }
     .footer__shades:before, .footer__shades:after {
       content: '';
       top: -53px;
@@ -3077,25 +3079,26 @@ input, .btn, .slick-slide, textarea {
     .footer__shades:after {
       background-image: url("../../img/min/shtorka-right.png");
       right: 37px; }
-  .footer__lamp:before, .footer__lamp:after {
-    content: '';
-    bottom: 72px;
-    position: absolute;
-    width: 68px;
-    height: 160px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../../img/min/lamp.png"); }
-  .footer__lamp:before {
-    left: 120px; }
-  .footer__lamp:after {
-    right: 120px; }
+  .footer__lamp {
+    padding-bottom: 70px; }
+    .footer__lamp:before, .footer__lamp:after {
+      content: '';
+      bottom: 25px;
+      position: absolute;
+      width: 68px;
+      height: 160px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../../img/min/lamp.png"); }
+    .footer__lamp:before {
+      left: 120px; }
+    .footer__lamp:after {
+      right: 120px; }
   .footer__body {
     position: relative;
     color: #fff;
     font-family: "Roboto", sans-serif;
-    font-size: 17px;
-    height: 277px; }
+    font-size: 17px; }
     .footer__body a {
       color: #fff; }
   .footer__wrap {
@@ -3135,8 +3138,13 @@ input, .btn, .slick-slide, textarea {
     margin-bottom: 7px; }
   .footer__contacts a {
     border-bottom: none; }
+  .footer__bottom {
+    margin-top: -25px;
+    background: url("../../img/min/steps.png") repeat-y center 25px; }
   .footer__data {
-    margin-top: 72px; }
+    position: relative;
+    top: -25px;
+    margin-bottom: -20px; }
   .footer__btn {
     width: 230px;
     height: 50px; }
@@ -3175,13 +3183,13 @@ input, .btn, .slick-slide, textarea {
   .footer__copy {
     max-width: 1165px;
     font-size: 16px;
-    margin-top: 18px;
+    margin-top: 5px;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 11px; }
+    padding-bottom: 10px; }
 
 .articles__list {
   margin-left: -15px;

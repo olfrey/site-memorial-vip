@@ -65,6 +65,10 @@
 		&__type-item
 			width: 33.333%
 			
+	.steps__item
+		margin-right: 70px
+		&:nth-of-type(4)
+			margin-right: 0
 		
 @media screen and (max-width: 1320px)
 	.case
@@ -141,6 +145,9 @@
 		&__item
 			width: 250px
 			padding-bottom: 15px
+			margin-right: 36px
+			&:nth-of-type(4)
+				margin-right: 0
 			
 
 	.gallery
@@ -210,7 +217,7 @@
 			margin-top: 20px
 
 		&__body
-			height: 330px
+			// height: 330px
 			
 			
 			
@@ -344,13 +351,17 @@
 			text-align: center
 			
 		&__list
-			max-width: 622px
+			max-width: 682px
 			margin-left: auto
 			margin-right: auto
 			
 		&__item
 			width: 300px
 			margin-bottom: 85px
+			margin-left: 20px
+			margin-right: 20px
+			&:nth-of-type(odd)
+				
 			&:nth-of-type(2)
 				&:before
 					top: auto
@@ -366,8 +377,9 @@
 					transform: translateX(-50%) rotate(180deg)
 			&:nth-of-type(4)
 				order: 3
+				margin-right: 20px
 			&:nth-of-type(3), &:nth-of-type(4)
-				margin-bottom: 0
+				margin-bottom: 40px
 
 	.reviews
 		&__list
@@ -447,10 +459,11 @@
 
 		&__body
 			font-size: 15px
-			height: 302px
+			// height: 302px
 
 		&__data
-			margin-top: 39px
+			margin-top: 50px
+			
 			
 			
 
@@ -468,8 +481,7 @@
 			// display: none
 			
 	.help
-		height: 70px
-		padding: 9px 180px
+		padding: 11px 180px
 		&:before
 			border-width: 70px 65px 0 0
 		&:after
@@ -707,7 +719,7 @@
 					font-size: 20px
 
 		&__data
-			margin-top: 0
+			margin-top: 70px
 
 		&__nav
 			li
@@ -726,7 +738,20 @@
 			
 		&__copy
 			display: none
+
+		&__shades
+			min-height: 1px
 			
+
+		&__lamp
+			padding-bottom: 0
+
+		&__bottom
+			background: none
+		
+			
+			
+
 
 	.jq-selectbox__select
 		font-size: 16px
@@ -1064,8 +1089,8 @@
 		&__item
 			width: 280px
 			margin-bottom: 85px
-			margin-left: auto
-			margin-right: auto
+			margin-left: auto !important
+			margin-right: auto !important
 			margin-bottom: 60px
 			&:before
 				top: auto
@@ -1229,7 +1254,7 @@
 		&__list
 			justify-content: center
 			
-		&__item
+		li
 			text-align: center
 			width: calc(50% - 30px) !important
 			a
@@ -1398,7 +1423,11 @@
 	.popup
 		padding: 15px
 			
-
+	.gallery
+		li
+			text-align: center
+			a
+				display: inline-block
 	.footer
 		margin-top: 30px
 
